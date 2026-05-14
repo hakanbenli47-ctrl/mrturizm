@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #12091f;
+  color: #ffeec7;
+}
+
+img {
+  max-width: 100%;
+}
+
+@keyframes softFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes softPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
+}
+
+@keyframes softPulseSlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: scale(1.12);
+    opacity: 0.8;
+  }
+}
+
+.animate-softPulse {
+  animation: softPulse 5s ease-in-out infinite;
+}
+
+.animate-softPulseSlow {
+  animation: softPulseSlow 7s ease-in-out infinite;
+}
+
+.rgb-love-text {
+  background: linear-gradient(
+    90deg,
+    #ff5c8a,
+    #ffb86b,
+    #ffd6e8,
+    #7dd3fc,
+    #c084fc,
+    #ff5c8a
+  );
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
+  animation: rgbLoveMove 5s linear infinite;
+}
+
+@keyframes rgbLoveMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-love {
+  background: linear-gradient(
+    90deg,
+    #ff5c8a,
+    #ff8a5c,
+    #23d5ff,
+    #a855f7,
+    #ff5c8a
+  );
+  background-size: 300% 100%;
+  animation: rgbLoveMove 5s linear infinite;
+}
+
+.rgb-love-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 92, 138, 0.68),
+    rgba(255, 184, 107, 0.55),
+    rgba(35, 213, 255, 0.56),
+    rgba(168, 85, 247, 0.65)
+  );
+  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.24);
+}
+
+.rgb-love-card::before {
+  content: "";
+  position: absolute;
+  inset: -90px;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 92, 138, 0.34),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(35, 213, 255, 0.24),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(255, 184, 107, 0.28),
+      transparent 34%
+    );
+  filter: blur(22px);
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+
+.rgb-love-card:hover::before {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.text-soft {
+  color: #90e8ff;
+}
+
+.text-warm {
+  color: #ffeec7;
+}
+
+.text-gold {
+  color: #ffb86b;
+}
+
+@media (max-width: 640px) {
+  .rgb-love-card {
+    border-radius: 1.6rem;
+  }
+}.tum-yazilar-rgb h1,
+.tum-yazilar-rgb h2,
+.tum-yazilar-rgb h3,
+.tum-yazilar-rgb h4,
+.tum-yazilar-rgb h5,
+.tum-yazilar-rgb h6,
+.tum-yazilar-rgb p,
+.tum-yazilar-rgb span,
+.tum-yazilar-rgb li,
+.tum-yazilar-rgb strong,
+.tum-yazilar-rgb small,
+.tum-yazilar-rgb a:not(.text-white) {
+  background: linear-gradient(
+    90deg,
+    #ff5c8a,
+    #ffb86b,
+    #ffd6e8,
+    #7dd3fc,
+    #c084fc,
+    #ff5c8a
+  );
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
+  animation: rgbLoveMove 6s linear infinite;
+}
