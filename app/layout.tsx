@@ -14,19 +14,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.engellitasima.com"),
+
   title: {
     default:
       "Engelli Taşıma | Engelli Araç Kiralama ve Engelli Taksi Hizmeti",
     template: "%s | Engelli Taşıma",
   },
+
   description:
     "Engelli Taşıma; engelli araç kiralama, engelli taksi, gelin arabası, gezi, yemek, düğün organizasyonu, planlı etkinlik ve fizik tedaviye gidiş-geliş ulaşım hizmetleri sunar.",
+
   keywords: [
     "engelli taşıma",
     "engelli araç kiralama",
     "engelli taksi",
     "engelli ulaşım",
     "tekerlekli sandalye araç kiralama",
+    "tekerlekli sandalye uyumlu araç",
     "engelli birey taşıma",
     "engelli gelin arabası",
     "gelin arabası",
@@ -36,15 +40,21 @@ export const metadata: Metadata = {
     "erişilebilir ulaşım",
     "İstanbul engelli araç kiralama",
     "İstanbul engelli taksi",
+    "İstanbul engelli ulaşım",
+    "randevulu engelli araç",
+    "planlı engelli ulaşım",
   ],
+
   verification: {
     google: "heCSvV5dFl8WsV_5YaX2HqDV_rPFpd_T7UscktOhKN4",
   },
+
   icons: {
     icon: "/mir-logo.png",
     shortcut: "/mir-logo.png",
     apple: "/mir-logo.png",
   },
+
   openGraph: {
     title:
       "Engelli Taşıma | Engelli Araç Kiralama ve Engelli Taksi Hizmeti",
@@ -63,6 +73,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title:
@@ -71,12 +82,21 @@ export const metadata: Metadata = {
       "Engelli araç kiralama, engelli taksi, gelin arabası ve fizik tedaviye gidiş-geliş ulaşım hizmetleri.",
     images: ["/mir-og.jpg"],
   },
+
   alternates: {
     canonical: "https://www.engellitasima.com",
   },
+
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
