@@ -395,13 +395,17 @@ export default function Home() {
       radial-gradient(circle at center, transparent 0%, rgba(18, 9, 31, 0.18) 65%, rgba(18, 9, 31, 0.48) 100%);
   }
 
-  .site-super-rgb section,
-  .site-super-rgb header,
-  .site-super-rgb footer,
-  .site-super-rgb > div {
-    position: relative;
-    z-index: 1;
-  }
+ .site-super-rgb section,
+.site-super-rgb header,
+.site-super-rgb footer {
+  position: relative;
+  z-index: 1;
+}
+
+.site-super-rgb .fixed {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
 
   .rgb-love-text {
     background: linear-gradient(
