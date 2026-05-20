@@ -8,15 +8,12 @@ import {
   Car,
   CheckCircle2,
   Clock,
-  HeartHandshake,
-  Home as HomeIcon,
   MapPin,
   MessageCircle,
   Phone,
   ShieldCheck,
   Sparkles,
   Star,
-  Stethoscope,
   Users,
   type LucideIcon,
 } from "lucide-react";
@@ -64,113 +61,113 @@ const sayfaIcerigi = {
 
   header: {
     kucukYazi: "MİR TURİZM",
-    baslik: "Engelli Araç • Engelli Taksi • Hasta Nakil Aracı",
+    baslik: "Engelli Araç Kiralama • Engelli Taksi • Gelin Arabası",
     buton: "WhatsApp",
   },
 
   hero: {
-    rozet: "Engelli ve hasta nakil ihtiyaçları için güvenli ulaşım",
-    baslik1: "Engelli araç,",
-    baslik2: "engelli taksi ve hasta nakil.",
+    rozet: "Şahsa özel engelli araç kiralama ve planlı ulaşım hizmeti",
+    baslik1: "Engelli araç",
+    baslik2: "kiralama hizmeti.",
     aciklama:
-      "Mir Turizm olarak tekerlekli sandalye kullanan bireyler, yürümekte zorlanan yaşlılar, hastane randevusuna gidecek hastalar ve refakatçili ulaşım ihtiyacı olan kişiler için güvenli, konforlu ve planlı ulaşım hizmeti sunuyoruz.",
+      "Mir Turizm olarak tekerlekli sandalye kullanan bireyler ve erişilebilir ulaşıma ihtiyaç duyan misafirlerimiz için şahsa özel engelli araç kiralama hizmeti sunuyoruz. Gezi, yemek, düğün organizasyonu, gelin arabası, planlı etkinlikler ve fizik tedaviye gidiş-geliş süreçleri için güvenli, konforlu ve randevulu ulaşım planı hazırlıyoruz.",
     etiketler: [
-      "Engelli Araç",
+      "Engelli Araç Kiralama",
       "Engelli Taksi",
-      "Hasta Nakil Aracı",
-      "Hastane Transferi",
+      "Gelin Arabası",
+      "Fizik Tedavi Gidiş-Geliş",
     ],
     anaButon: "Randevu ve Fiyat Al",
     ikinciButon: "Hemen Ara",
     gorsel: "/vip1.jpg",
-    gorselUstYazi: "Engelsiz ve Güvenli Ulaşım",
-    gorselBaslik: "Yolculuğunuz güvenle planlanır.",
+    gorselUstYazi: "Engelsiz ve Şahsa Özel Ulaşım",
+    gorselBaslik: "Her yolculuk ihtiyaca göre planlanır.",
     gorselAciklama:
-      "Alınacak konum, gidilecek adres, tarih, saat ve ihtiyaç durumuna göre en uygun araç yönlendirilir.",
+      "Alınacak konum, gidilecek adres, tarih, saat ve kullanım amacına göre en uygun engelli araç kiralama planı oluşturulur.",
   },
 
   istatistikler: [
-    ["7/24", "Bilgi ve Randevu"],
-    ["100%", "Planlı Ulaşım"],
-    ["Güvenli", "Araç Desteği"],
-    ["Refakat", "Uyumlu Hizmet"],
+    ["1 Gün", "Önceden Randevu"],
+    ["En Az", "3 Saat Önce"],
+    ["Şahsa Özel", "Ulaşım Planı"],
+    ["Konforlu", "Engelli Araç"],
   ],
 
   ozetKartlar: [
     {
-     icon: Accessibility,
-      title: "Engelli araç",
-      desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir ve güvenli ulaşım desteği.",
-    },
-    {
       icon: Accessibility,
-      title: "Engelli taksi",
-      desc: "Şehir içi hastane, ev, bakım merkezi ve özel adres transferleri için pratik çözüm.",
+      title: "Engelli araç kiralama",
+      desc: "Tekerlekli sandalye kullanan bireyler için güvenli, konforlu ve erişilebilir araç kiralama hizmeti.",
     },
     {
-      icon: Stethoscope,
-      title: "Hasta nakil",
-      desc: "Hastane randevusu, taburcu işlemi ve kontrollü ulaşım ihtiyaçlarına özel hizmet.",
+      icon: Car,
+      title: "Engelli taksi",
+      desc: "Şehir içi gezi, yemek, fizik tedavi, organizasyon ve özel adres ulaşımları için pratik çözüm.",
+    },
+    {
+      icon: CalendarCheck,
+      title: "Randevulu hizmet",
+      desc: "Araç uygunluğu için 1 gün önceden ya da en az 3 saat önceden randevu alınmalıdır.",
     },
     {
       icon: ShieldCheck,
       title: "Güvenli süreç",
-      desc: "İniş-biniş, sabitleme, güzergah ve zaman planı dikkatle oluşturulur.",
+      desc: "İniş-biniş, araç içi konfor, güzergah ve zaman planı dikkatle oluşturulur.",
     },
   ] satisfies KartItem[],
 
   hizmetler: {
     rozet: "Hizmetlerimiz",
-    baslik: "Engelli ve hasta ulaşımında ihtiyaç duyulan tüm ana hizmetler.",
+    baslik: "Engelli bireylere özel araç kiralama ve ulaşım çözümleri.",
     aciklama:
-      "Her hizmette temel amacımız; yolcunun güvenli, rahat, zamanında ve saygılı bir şekilde ulaşımını sağlamaktır.",
+      "Bu hizmet alanı tamamen engelli bireylerin günlük yaşam, sosyal etkinlik, özel gün ve planlı ulaşım ihtiyaçlarına yönelik şahsa özel araç kiralama hizmetidir.",
     kartlar: [
       {
         icon: Accessibility,
-        title: "Engelli Araç Hizmeti",
-        desc: "Tekerlekli sandalye kullanan yolcular için iniş-biniş süreci kolaylaştırılmış, erişilebilir araç desteği sağlanır.",
+        title: "Engelli Araç Kiralama",
+        desc: "Tekerlekli sandalye kullanan bireyler için iniş-biniş süreci kolay, konforlu ve erişilebilir araç kiralama hizmeti sunulur.",
         image: "/vip1.jpg",
         points: [
-          "Tekerlekli sandalye uyumlu ulaşım",
-          "Güvenli araç içi sabitleme",
+          "Tekerlekli sandalye uyumlu araç",
+          "Şahsa özel ulaşım planı",
           "Kapıdan alım ve adrese bırakma",
-          "Refakatçi ile yolculuk uyumu",
+          "Güzergaha göre fiyatlandırma",
         ],
       },
       {
-        icon: Accessibility,
+        icon: Car,
         title: "Engelli Taksi",
-        desc: "Şehir içinde hastane, ev, iş yeri, bakım merkezi, otel veya özel adreslere güvenli engelli taksi hizmeti sunulur.",
+        desc: "Şehir içi kısa ve orta mesafe ulaşımlarda engelli bireylerin sosyal yaşamına uygun, randevulu taksi hizmeti sağlanır.",
         image: "/vip-2.jpg",
         points: [
-          "Şehir içi transfer",
+          "Şehir içi ulaşım",
           "Randevulu araç yönlendirme",
-          "Yaşlı ve engelli bireylere destek",
+          "Gezi, yemek ve özel adres transferi",
           "Kısa ve uzun mesafe ulaşım",
         ],
       },
       {
-        icon: Stethoscope,
-        title: "Hasta Nakil Aracı",
-        desc: "Yürümekte zorlanan, tedaviye gidecek veya hastaneden çıkış yapacak kişiler için konforlu hasta nakil ulaşımı planlanır.",
+        icon: CalendarCheck,
+        title: "Düğün Organizasyonu & Gelin Arabası",
+        desc: "Düğün, nişan ve özel günlerde engelli bireylerin ulaşım sürecini kolaylaştırmak için gelin arabası ve organizasyon ulaşımı planlanır.",
         image: "/vip11.jpg",
         points: [
-          "Hastane randevusu transferi",
-          "Taburcu sonrası eve ulaşım",
-          "Kontrol ve tedavi günü taşıma",
-          "Dikkatli ve sakin sürüş",
+          "Gelin arabası hizmeti",
+          "Düğün günü ulaşım planı",
+          "Organizasyon saatine göre planlama",
+          "1 gün önceden randevu önerilir",
         ],
       },
       {
-        icon: HeartHandshake,
-        title: "Refakatçili Ulaşım Desteği",
-        desc: "Yolculuk sırasında yanında refakatçi bulunması gereken kişiler için araç ve koltuk düzeni ihtiyaca göre hazırlanır.",
+        icon: Clock,
+        title: "Fizik Tedavi Gidiş-Geliş",
+        desc: "Fizik tedavi merkezine düzenli veya tek seferlik gidiş-geliş ihtiyaçları için engelli bireye özel ulaşım planı oluşturulur.",
         image: "/vip-4.jpg",
         points: [
-          "Aile/refakatçi uyumlu planlama",
-          "Kapı önü karşılama",
-          "Güvenli iniş-biniş desteği",
-          "Saygılı ve sabırlı hizmet",
+          "Fizik tedaviye gidiş-geliş",
+          "Düzenli randevu planı",
+          "Saat hassasiyetine uygun ulaşım",
+          "En az 3 saat önce randevu",
         ],
       },
     ] satisfies KartItem[],
@@ -178,58 +175,58 @@ const sayfaIcerigi = {
 
   kullanimAlanlari: {
     rozet: "Nerelerde Kullanılır?",
-    baslik: "Evden hastaneye, hastaneden eve veya özel adreslere güvenli ulaşım.",
+    baslik: "Günlük yaşamdan özel organizasyonlara kadar şahsa özel ulaşım.",
     kartlar: [
       {
-        icon: Stethoscope,
-        title: "Hastane randevuları",
-        desc: "Muayene, kontrol, fizik tedavi, diyaliz veya düzenli tedavi süreçleri için planlı ulaşım.",
+        icon: Sparkles,
+        title: "Gezi ve sosyal yaşam",
+        desc: "Sahil, alışveriş merkezi, aile ziyareti, şehir gezisi veya özel programlar için konforlu ulaşım.",
       },
       {
-        icon: HomeIcon,
-        title: "Taburcu sonrası ulaşım",
-        desc: "Hastaneden eve dönüşlerde hastanın konforuna uygun dikkatli transfer süreci.",
+        icon: Users,
+        title: "Yemek ve davet programları",
+        desc: "Restoran, aile yemeği, arkadaş buluşması veya özel davetlere erişilebilir ulaşım desteği.",
+      },
+      {
+        icon: CalendarCheck,
+        title: "Düğün organizasyonları",
+        desc: "Düğün, nişan ve özel günlerde gelin arabası dahil olmak üzere planlı ulaşım hizmeti.",
+      },
+      {
+        icon: Clock,
+        title: "Fizik tedavi ulaşımı",
+        desc: "Fizik tedavi randevularına düzenli veya tek seferlik gidiş-geliş için planlı araç kiralama.",
       },
       {
         icon: MapPin,
         title: "Şehir içi özel adresler",
-        desc: "Ev, otel, bakım merkezi, huzurevi, iş yeri veya özel davet noktalarına ulaşım.",
-      },
-      {
-        icon: Users,
-        title: "Yaşlı birey transferi",
-        desc: "Yürümekte zorlanan büyüklerimiz için sakin, sabırlı ve destekleyici ulaşım hizmeti.",
-      },
-      {
-        icon: CalendarCheck,
-        title: "Randevulu planlama",
-        desc: "Tarih, saat, alınacak yer ve gidilecek adres netleştirilerek araç hazırlanır.",
+        desc: "Ev, otel, etkinlik alanı, düğün salonu, restoran veya özel adreslere ulaşım.",
       },
       {
         icon: ShieldCheck,
-        title: "Güvenli araç içi süreç",
-        desc: "Yolculuk öncesi ihtiyaç değerlendirilir, iniş-biniş ve sabitleme dikkatle yapılır.",
+        title: "Planlı etkinlikler",
+        desc: "Konser, toplantı, kutlama, aile programı ve organizasyonlara güvenli ulaşım planı.",
       },
     ] satisfies KartItem[],
   },
 
   araclar: {
     rozet: "Araç Seçenekleri",
-    baslik: "İhtiyaca göre uygun araç tipi belirlenir.",
+    baslik: "İhtiyaca ve kullanım amacına göre uygun araç planlanır.",
     kartlar: [
       {
-        title: "Engelli Taksi",
-        desc: "Şehir içi kısa ve orta mesafe ulaşım ihtiyaçları için pratik çözüm.",
-        image: "/vip-2.jpg",
-      },
-      {
-        title: "Engelli Araç",
-        desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir araç desteği.",
+        title: "Engelli Araç Kiralama",
+        desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir ve konforlu araç kiralama.",
         image: "/vip1.jpg",
       },
       {
-        title: "Hasta Nakil Aracı",
-        desc: "Hastane, tedavi ve taburcu sonrası ulaşım için konforlu taşıma.",
+        title: "Engelli Taksi",
+        desc: "Şehir içi ulaşım, gezi, yemek ve özel adres transferleri için randevulu hizmet.",
+        image: "/vip-2.jpg",
+      },
+      {
+        title: "Gelin Arabası",
+        desc: "Düğün organizasyonlarında özel günün akışına uygun gelin arabası planlaması.",
         image: "/vip11.jpg",
       },
     ],
@@ -237,27 +234,27 @@ const sayfaIcerigi = {
 
   nedenBiz: {
     rozet: "Neden Mir Turizm?",
-    baslik: "Hasta ve engelli ulaşımında güven, zamanlama ve hassasiyet önemlidir.",
+    baslik: "Engelli araç kiralama hizmetinde güven, zamanlama ve konfor önemlidir.",
     kartlar: [
       {
         icon: ShieldCheck,
         title: "Güvenli",
-        desc: "Yolculuk öncesi ihtiyaçlar alınır, araç ve güzergah buna göre hazırlanır.",
+        desc: "Yolculuk öncesi kullanım amacı, güzergah ve ihtiyaçlar alınır; araç buna göre hazırlanır.",
       },
       {
         icon: Clock,
-        title: "Tam zamanında",
-        desc: "Hastane randevusu ve planlı ulaşım süreçlerinde saat hassasiyetiyle hareket edilir.",
+        title: "Zamanında",
+        desc: "Fizik tedavi, düğün organizasyonu ve planlı etkinliklerde saat hassasiyetiyle hareket edilir.",
       },
       {
         icon: Star,
         title: "Konforlu",
-        desc: "Yolcunun durumuna göre rahat, sakin ve özenli bir yolculuk deneyimi sunulur.",
+        desc: "Engelli bireyin rahatlığına uygun, sakin ve özenli bir yolculuk deneyimi sunulur.",
       },
       {
         icon: Sparkles,
-        title: "Hijyenik",
-        desc: "Araç temizliği, düzeni ve yolculuk konforu hizmetin önemli parçasıdır.",
+        title: "Şahsa özel",
+        desc: "Her ulaşım talebi kişinin ihtiyacına, kullanım amacına ve güzergahına göre planlanır.",
       },
     ] satisfies KartItem[],
   },
@@ -268,58 +265,60 @@ const sayfaIcerigi = {
     adimlar: [
       {
         title: "Bilgiler alınır",
-        desc: "Alınacak adres, gidilecek adres, tarih, saat ve yolcunun ihtiyaç durumu öğrenilir.",
+        desc: "Alınacak adres, gidilecek adres, tarih, saat ve kullanım amacı öğrenilir.",
       },
       {
         title: "Araç belirlenir",
-        desc: "Engelli araç, engelli taksi veya hasta nakil aracı ihtiyaca göre seçilir.",
+        desc: "Engelli araç kiralama, engelli taksi veya gelin arabası ihtiyacına göre planlama yapılır.",
       },
       {
         title: "Plan netleşir",
-        desc: "Saat, güzergah, refakatçi durumu ve fiyat bilgisi karşılıklı olarak netleştirilir.",
+        desc: "Saat, güzergah, hizmet türü ve fiyat bilgisi karşılıklı olarak netleştirilir.",
       },
       {
-        title: "Transfer yapılır",
-        desc: "Belirlenen saatte güvenli, konforlu ve dikkatli ulaşım hizmeti sağlanır.",
+        title: "Ulaşım sağlanır",
+        desc: "Belirlenen saatte güvenli, konforlu ve şahsa özel ulaşım hizmeti verilir.",
       },
     ],
   },
 
   yorumlar: {
     rozet: "Hizmet Anlayışımız",
-    baslik: "Bu alanda güven veren hizmet dili çok önemlidir.",
+    baslik: "Engelli ulaşımında güven veren, saygılı ve planlı hizmet.",
     kartlar: [
       {
-        title: "Hastane ulaşımında destek",
-        desc: "Randevu saatine yetişmek, iniş-biniş sürecini doğru yönetmek ve yolcunun kendini güvende hissetmesini sağlamak önceliğimizdir.",
+        title: "Sosyal yaşama erişim",
+        desc: "Engelli bireylerin gezi, yemek, aile ziyareti ve özel günlere daha rahat katılabilmesi için ulaşım süreci planlanır.",
       },
       {
-        title: "Yaşlı ve engelli bireylere hassasiyet",
-        desc: "Her yolcuya sabırlı, saygılı ve dikkatli yaklaşılır. Yolculuk yalnızca ulaşım değil, güven sürecidir.",
+        title: "Özel günlerde destek",
+        desc: "Düğün organizasyonu, gelin arabası ve planlı etkinliklerde zamanlama ve konfor öncelikli ilerlenir.",
       },
       {
-        title: "Aileler için rahatlık",
-        desc: "Yakınınızın ulaşımı önceden planlandığında hem hasta hem aile için süreç daha kontrollü ilerler.",
+        title: "Düzenli ulaşım kolaylığı",
+        desc: "Fizik tedaviye gidiş-geliş gibi düzenli ihtiyaçlarda randevu saatlerine uygun araç planı oluşturulur.",
       },
     ],
   },
 
   notlar: {
     rozet: "Önemli Bilgilendirme",
-    baslik: "Doğru araç için ihtiyaç bilgisi önceden alınmalıdır.",
+    baslik: "Doğru araç için randevu ve ihtiyaç bilgisi önceden alınmalıdır.",
     maddeler: [
-      "Engelli araç, engelli taksi ve hasta nakil aracı hizmetleri randevulu olarak planlanır.",
-      "Alınacak adres, gidilecek adres, tarih, saat ve yolcunun hareket durumu önceden paylaşılmalıdır.",
-      "Tekerlekli sandalye kullanımı, refakatçi durumu ve kat/asansör bilgisi hizmet planlamasında önemlidir.",
+      "Engelli araç kiralama ve engelli taksi hizmetleri randevulu olarak planlanır.",
+      "Randevu için 1 gün önceden iletişime geçilmesi önerilir.",
+      "Acil planlamalarda en az 3 saat önceden randevu alınmalıdır.",
+      "Alınacak adres, gidilecek adres, tarih, saat ve kullanım amacı önceden paylaşılmalıdır.",
+      "Gelin arabası ve düğün organizasyonu taleplerinde tarih uygunluğu ayrıca kontrol edilir.",
       "Fiyatlandırma mesafe, güzergah, bekleme süresi ve hizmet türüne göre belirlenir.",
     ],
   },
 
   cta: {
     rozet: "Randevu ve Bilgi",
-    baslik: "Engelli araç, engelli taksi veya hasta nakil aracı için hemen iletişime geçin.",
+    baslik: "Engelli araç kiralama, engelli taksi veya gelin arabası için iletişime geçin.",
     aciklama:
-      "WhatsApp üzerinden alınacak yer, gidilecek adres, tarih, saat ve yolcunun ihtiyaç durumunu gönderin. Size en uygun araç ve hizmet planı hazırlansın.",
+      "WhatsApp üzerinden alınacak yer, gidilecek adres, tarih, saat ve kullanım amacını gönderin. Size en uygun şahsa özel ulaşım planı hazırlansın.",
     whatsapp: "WhatsApp’tan Randevu Al",
     telefon: "Telefonla Ara",
   },
@@ -427,7 +426,7 @@ export default function Home() {
             </div>
 
             <a
-              href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20ve%20hasta%20nakil%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
+              href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
               target="_blank"
               rel="noreferrer"
               className="hidden rounded-full bg-love px-5 py-3 text-sm font-black text-white shadow-lg transition hover:-translate-y-1 md:inline-flex"
@@ -476,7 +475,7 @@ export default function Home() {
 
               <div className="mt-8 grid gap-3 sm:flex">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20/%20engelli%20taksi%20/%20hasta%20nakil%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AYolcunun%20durumu:`}
+                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
                   target="_blank"
                   rel="noreferrer"
                   className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-love px-6 py-4 text-sm font-black text-white shadow-xl shadow-fuchsia-500/25 transition hover:-translate-y-1 sm:text-base"
@@ -940,7 +939,7 @@ export default function Home() {
 
               <div className="grid gap-3">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20/%20engelli%20taksi%20/%20hasta%20nakil%20arac%C4%B1%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AYolcunun%20durumu:`}
+                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
                   target="_blank"
                   rel="noreferrer"
                   className="flex min-h-16 items-center justify-center gap-3 rounded-3xl bg-love px-7 py-5 text-base font-black text-white shadow-xl transition hover:-translate-y-1"
@@ -967,17 +966,18 @@ export default function Home() {
           <div>
             <h3 className="text-lg font-black rgb-love-text">Mir Turizm</h3>
             <p className="mt-3 leading-7">
-              Engelli araç, engelli taksi, hasta nakil aracı, hastane transferi
-              ve özel ulaşım hizmetleri.
+              Engelli araç kiralama, engelli taksi, gelin arabası, gezi, yemek,
+              düğün organizasyonu, planlı etkinlik ve fizik tedaviye gidiş-geliş
+              ulaşım hizmetleri.
             </p>
           </div>
 
           <div>
             <h4 className="mb-3 font-black rgb-love-text">Hizmetler</h4>
-            <p>Engelli Araç</p>
+            <p>Engelli Araç Kiralama</p>
             <p>Engelli Taksi</p>
-            <p>Hasta Nakil Aracı</p>
-            <p>Hastane Transferi</p>
+            <p>Gelin Arabası</p>
+            <p>Fizik Tedavi Gidiş-Geliş</p>
           </div>
 
           <div>
@@ -1002,7 +1002,7 @@ export default function Home() {
         </a>
 
         <a
-          href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20/%20engelli%20taksi%20/%20hasta%20nakil%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`}
+          href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`}
           target="_blank"
           rel="noreferrer"
           className="flex items-center justify-center gap-2 rounded-full bg-love px-4 py-3 text-sm font-black text-white shadow-2xl transition hover:-translate-y-1"
