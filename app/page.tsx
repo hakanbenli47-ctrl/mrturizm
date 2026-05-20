@@ -326,88 +326,263 @@ const sayfaIcerigi = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#12091f] text-[#ffeec7]">
-      <style jsx global>{`
-        @keyframes rgbText {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
+    <main className="site-super-rgb min-h-screen overflow-hidden bg-transparent text-[#fff4d6]">
+    <style jsx global>{`
+  @keyframes rgbText {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
-        @keyframes softPulse {
-          0%,
-          100% {
-            opacity: 0.55;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.9;
-            transform: scale(1.08);
-          }
-        }
+  @keyframes softPulse {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.08);
+    }
+  }
 
-        @keyframes softFloat {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-8px);
-          }
-        }
+  @keyframes softFloat {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 
-        .rgb-love-text {
-          background: linear-gradient(
-            90deg,
-            #ffe66d,
-            #ff8a00,
-            #23d5ff,
-            #ff5c8a,
-            #ffe66d
-          );
-          background-size: 300% 100%;
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
-          animation: rgbText 5s linear infinite;
-        }
+  .site-super-rgb {
+    position: relative;
+    background:
+      radial-gradient(circle at 8% 8%, rgba(255, 167, 38, 0.5), transparent 30%),
+      radial-gradient(circle at 92% 12%, rgba(255, 92, 138, 0.32), transparent 32%),
+      radial-gradient(circle at 80% 88%, rgba(35, 213, 255, 0.24), transparent 34%),
+      linear-gradient(135deg, #3a1704 0%, #6f2a05 28%, #5a1b36 58%, #103d5c 100%);
+    color: #fff4d6;
+  }
 
-        .bg-love {
-          background: linear-gradient(
-            90deg,
-            #ff335f,
-            #ff8a00,
-            #23d5ff,
-            #7c3aed,
-            #ff335f
-          );
-          background-size: 300% 100%;
-          animation: rgbText 5s linear infinite;
-        }
+  .site-super-rgb::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 85%);
+  }
 
-        .rgb-love-card {
-          position: relative;
-          overflow: hidden;
-          border-radius: 2rem;
-          border: 1px solid rgba(103, 232, 249, 0.2);
-          background: rgba(36, 16, 57, 0.9);
-          box-shadow: 0 25px 90px rgba(15, 23, 42, 0.22);
-        }
+  .site-super-rgb::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at center, transparent 0%, rgba(18, 9, 31, 0.18) 65%, rgba(18, 9, 31, 0.48) 100%);
+  }
 
-        .animate-softPulse {
-          animation: softPulse 7s ease-in-out infinite;
-        }
+  .site-super-rgb section,
+  .site-super-rgb header,
+  .site-super-rgb footer,
+  .site-super-rgb > div {
+    position: relative;
+    z-index: 1;
+  }
 
-        .animate-softPulseSlow {
-          animation: softPulse 9s ease-in-out infinite;
-        }
-      `}</style>
+  .rgb-love-text {
+    background: linear-gradient(
+      90deg,
+      #fff7b2,
+      #ffd166,
+      #ff8a00,
+      #ff5c5c,
+      #ffcf6b,
+      #42e8ff,
+      #ff9f1c,
+      #fff7b2
+    );
+    background-size: 380% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+    animation: rgbText 5s linear infinite;
+    filter: drop-shadow(0 0 16px rgba(255, 138, 0, 0.18));
+  }
+
+  .bg-love {
+    background: linear-gradient(
+      90deg,
+      #ff7a00,
+      #ffb347,
+      #ff4f7b,
+      #23d5ff,
+      #a855f7,
+      #ff9f1c,
+      #ff7a00
+    );
+    background-size: 380% 100%;
+    animation: rgbText 5s linear infinite;
+  }
+
+  .rgb-love-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 1px;
+    border: 1px solid rgba(255, 209, 102, 0.28);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 122, 0, 0.85),
+      rgba(255, 179, 71, 0.68),
+      rgba(255, 92, 138, 0.54),
+      rgba(35, 213, 255, 0.44)
+    );
+    box-shadow:
+      0 30px 110px rgba(255, 122, 0, 0.22),
+      0 18px 70px rgba(15, 23, 42, 0.24);
+  }
+
+  .rgb-love-card::before {
+    content: "";
+    position: absolute;
+    inset: -90px;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255, 179, 71, 0.38), transparent 32%),
+      radial-gradient(circle at 80% 16%, rgba(255, 92, 138, 0.28), transparent 34%),
+      radial-gradient(circle at 52% 90%, rgba(35, 213, 255, 0.22), transparent 34%);
+    filter: blur(24px);
+    opacity: 0.9;
+    transition: 0.5s ease;
+  }
+
+  .rgb-love-card:hover::before {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+
+  .animate-softPulse {
+    animation: softPulse 7s ease-in-out infinite;
+  }
+
+  .animate-softPulseSlow {
+    animation: softPulse 9s ease-in-out infinite;
+  }
+
+  .site-super-rgb p,
+  .site-super-rgb li {
+    color: #fff1d2 !important;
+  }
+
+  .site-super-rgb .text-\\[\\#d8f7ff\\],
+  .site-super-rgb .text-\\[\\#90e8ff\\] {
+    color: #fff1d2 !important;
+  }
+
+  .site-super-rgb .text-\\[\\#ffb86b\\] {
+    color: #ffd166 !important;
+  }
+
+  .site-super-rgb .bg-\\[\\#12091f\\],
+  .site-super-rgb .bg-\\[\\#12091f\\]\\/55,
+  .site-super-rgb .bg-\\[\\#12091f\\]\\/60,
+  .site-super-rgb .bg-\\[\\#12091f\\]\\/65,
+  .site-super-rgb .bg-\\[\\#12091f\\]\\/70,
+  .site-super-rgb .bg-\\[\\#12091f\\]\\/72,
+  .site-super-rgb .bg-\\[\\#12091f\\]\\/94 {
+    background-color: rgba(74, 31, 8, 0.72) !important;
+  }
+
+  .site-super-rgb .bg-\\[\\#241039\\],
+  .site-super-rgb .bg-\\[\\#241039\\]\\/80,
+  .site-super-rgb .bg-\\[\\#241039\\]\\/90 {
+    background:
+      linear-gradient(145deg, rgba(101, 43, 9, 0.78), rgba(82, 27, 52, 0.72)) !important;
+  }
+
+  .site-super-rgb .bg-\\[\\#291044\\]\\/72,
+  .site-super-rgb .bg-\\[\\#291044\\]\\/80 {
+    background:
+      linear-gradient(145deg, rgba(113, 47, 8, 0.78), rgba(70, 31, 78, 0.7)) !important;
+  }
+
+  .site-super-rgb .bg-\\[\\#2a1044\\]\\/70 {
+    background:
+      linear-gradient(145deg, rgba(121, 52, 8, 0.78), rgba(74, 31, 86, 0.68)) !important;
+  }
+
+  .site-super-rgb .bg-\\[\\#1d102f\\]\\/90,
+  .site-super-rgb .bg-\\[\\#1d102f\\]\\/94 {
+    background:
+      linear-gradient(145deg, rgba(78, 33, 9, 0.84), rgba(53, 23, 64, 0.78)) !important;
+  }
+
+  .site-super-rgb .border-cyan-300\\/20,
+  .site-super-rgb .border-cyan-300\\/15,
+  .site-super-rgb .border-fuchsia-300\\/20,
+  .site-super-rgb .border-fuchsia-300\\/25 {
+    border-color: rgba(255, 209, 102, 0.32) !important;
+  }
+
+  .site-super-rgb .shadow-xl,
+  .site-super-rgb .shadow-2xl {
+    box-shadow:
+      0 20px 70px rgba(255, 122, 0, 0.12),
+      0 10px 45px rgba(15, 23, 42, 0.22) !important;
+  }
+
+  .site-super-rgb .from-\\[\\#12091f\\]\\/95,
+  .site-super-rgb .from-\\[\\#12091f\\]\\/90,
+  .site-super-rgb .from-\\[\\#12091f\\]\\/85 {
+    --tw-gradient-from: rgba(58, 23, 4, 0.9) var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgba(58, 23, 4, 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+
+  .site-super-rgb .via-\\[\\#12091f\\]\\/35 {
+    --tw-gradient-via: rgba(58, 23, 4, 0.24) var(--tw-gradient-via-position) !important;
+  }
+
+  .site-super-rgb .fill-\\[\\#ffb86b\\] {
+    fill: #ffd166 !important;
+  }
+
+  .site-super-rgb .text-\\[\\#23d5ff\\] {
+    color: #42e8ff !important;
+  }
+
+  @media (max-width: 640px) {
+    .rgb-love-card {
+      border-radius: 1.6rem;
+    }
+
+    .site-super-rgb {
+      background:
+        radial-gradient(circle at 18% 6%, rgba(255, 167, 38, 0.48), transparent 34%),
+        radial-gradient(circle at 88% 18%, rgba(255, 92, 138, 0.28), transparent 36%),
+        linear-gradient(135deg, #431a04 0%, #6a2705 42%, #3b1746 100%);
+    }
+
+    .site-super-rgb p,
+    .site-super-rgb li {
+      color: #fff3dc !important;
+    }
+  }
+`}</style>
 
       <section className="relative overflow-hidden px-4 pb-16 pt-6 sm:px-6 lg:pb-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,92,138,0.24),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(35,213,255,0.18),transparent_36%),linear-gradient(135deg,#16071f_0%,#2a1044_46%,#0e2846_100%)]" />

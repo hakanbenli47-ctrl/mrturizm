@@ -10,8 +10,12 @@ html {
 
 body {
   margin: 0;
-  background: #12091f;
-  color: #ffeec7;
+  background:
+    radial-gradient(circle at top left, rgba(255, 138, 0, 0.34), transparent 34%),
+    radial-gradient(circle at top right, rgba(255, 92, 138, 0.24), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(35, 213, 255, 0.18), transparent 34%),
+    linear-gradient(135deg, #2a1306 0%, #4a1f08 38%, #2d1238 72%, #102b45 100%);
+  color: #fff4d6;
 }
 
 img {
@@ -63,24 +67,6 @@ img {
   animation: softPulseSlow 7s ease-in-out infinite;
 }
 
-.rgb-love-text {
-  background: linear-gradient(
-    90deg,
-    #ff5c8a,
-    #ffb86b,
-    #ffd6e8,
-    #7dd3fc,
-    #c084fc,
-    #ff5c8a
-  );
-  background-size: 300% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent !important;
-  -webkit-text-fill-color: transparent;
-  animation: rgbLoveMove 5s linear infinite;
-}
-
 @keyframes rgbLoveMove {
   0% {
     background-position: 0% 50%;
@@ -95,19 +81,42 @@ img {
   }
 }
 
-.bg-love {
+/* Turuncu ağırlıklı canlı RGB yazı */
+.rgb-love-text {
   background: linear-gradient(
     90deg,
-    #ff5c8a,
-    #ff8a5c,
-    #23d5ff,
-    #a855f7,
-    #ff5c8a
+    #fff1a8,
+    #ffb347,
+    #ff7a00,
+    #ff4f7b,
+    #ffd36a,
+    #38d9ff,
+    #ff9f1c
   );
-  background-size: 300% 100%;
+  background-size: 350% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
   animation: rgbLoveMove 5s linear infinite;
 }
 
+/* Buton ve vurgu arka planı */
+.bg-love {
+  background: linear-gradient(
+    90deg,
+    #ff7a00,
+    #ffb347,
+    #ff4f7b,
+    #23d5ff,
+    #ff9f1c,
+    #ff7a00
+  );
+  background-size: 350% 100%;
+  animation: rgbLoveMove 5s linear infinite;
+}
+
+/* Kart dış parlama */
 .rgb-love-card {
   position: relative;
   overflow: hidden;
@@ -115,35 +124,43 @@ img {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(255, 92, 138, 0.68),
-    rgba(255, 184, 107, 0.55),
-    rgba(35, 213, 255, 0.56),
-    rgba(168, 85, 247, 0.65)
+    rgba(255, 122, 0, 0.78),
+    rgba(255, 179, 71, 0.68),
+    rgba(255, 79, 123, 0.58),
+    rgba(35, 213, 255, 0.48)
   );
-  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.24);
+  box-shadow:
+    0 28px 90px rgba(255, 122, 0, 0.18),
+    0 18px 70px rgba(15, 23, 42, 0.18);
 }
 
 .rgb-love-card::before {
   content: "";
   position: absolute;
   inset: -90px;
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(255, 92, 138, 0.34),
-      transparent 30%
-    ),
+  background:
     radial-gradient(
-      circle at 80% 15%,
-      rgba(35, 213, 255, 0.24),
+      circle at 20% 20%,
+      rgba(255, 122, 0, 0.38),
       transparent 32%
     ),
     radial-gradient(
+      circle at 80% 15%,
+      rgba(255, 179, 71, 0.3),
+      transparent 34%
+    ),
+    radial-gradient(
       circle at 50% 90%,
-      rgba(255, 184, 107, 0.28),
+      rgba(255, 79, 123, 0.24),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(35, 213, 255, 0.2),
       transparent 34%
     );
-  filter: blur(22px);
-  opacity: 0.9;
+  filter: blur(24px);
+  opacity: 0.95;
   transition: 0.5s ease;
 }
 
@@ -152,23 +169,21 @@ img {
   opacity: 1;
 }
 
+/* Yardımcı yazı renkleri */
 .text-soft {
-  color: #90e8ff;
+  color: #d7fbff;
 }
 
 .text-warm {
-  color: #ffeec7;
+  color: #fff4d6;
 }
 
 .text-gold {
-  color: #ffb86b;
+  color: #ffb347;
 }
 
-@media (max-width: 640px) {
-  .rgb-love-card {
-    border-radius: 1.6rem;
-  }
-}.tum-yazilar-rgb h1,
+/* Sayfadaki tüm yazılara turuncu ağırlıklı RGB efekti */
+.tum-yazilar-rgb h1,
 .tum-yazilar-rgb h2,
 .tum-yazilar-rgb h3,
 .tum-yazilar-rgb h4,
@@ -182,17 +197,31 @@ img {
 .tum-yazilar-rgb a:not(.text-white) {
   background: linear-gradient(
     90deg,
-    #ff5c8a,
-    #ffb86b,
-    #ffd6e8,
-    #7dd3fc,
-    #c084fc,
-    #ff5c8a
+    #fff1a8,
+    #ffb347,
+    #ff7a00,
+    #ff4f7b,
+    #ffd36a,
+    #38d9ff,
+    #ff9f1c
   );
-  background-size: 300% 100%;
+  background-size: 350% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent !important;
   -webkit-text-fill-color: transparent;
   animation: rgbLoveMove 6s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .rgb-love-card {
+    border-radius: 1.6rem;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(255, 138, 0, 0.38), transparent 42%),
+      radial-gradient(circle at bottom right, rgba(255, 79, 123, 0.24), transparent 38%),
+      linear-gradient(135deg, #351707 0%, #4a1f08 48%, #241039 100%);
+  }
 }
