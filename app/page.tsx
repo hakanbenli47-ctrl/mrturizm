@@ -7,14 +7,16 @@ import {
   CalendarCheck,
   Car,
   CheckCircle2,
-  Heart,
+  Clock,
   HeartHandshake,
   Home as HomeIcon,
+  MapPin,
   MessageCircle,
   Phone,
   ShieldCheck,
   Sparkles,
   Star,
+  Stethoscope,
   Users,
   type LucideIcon,
 } from "lucide-react";
@@ -62,219 +64,352 @@ const sayfaIcerigi = {
 
   header: {
     kucukYazi: "MİR TURİZM",
-    baslik: "Sosyal Destek • Engelsiz Ulaşım • Özel Gün Araç Desteği",
+    baslik: "Engelli Araç • Engelli Taksi • Hasta Nakil Aracı",
     buton: "WhatsApp",
   },
 
   hero: {
-    rozet: "Sevgiyle, saygıyla ve güvenle planlanan özel ulaşım",
-    baslik1: "Hayatın özel anlarında",
-    baslik2: "yanınızda oluyoruz.",
+    rozet: "Engelli ve hasta nakil ihtiyaçları için güvenli ulaşım",
+    baslik1: "Engelli araç,",
+    baslik2: "engelli taksi ve hasta nakil.",
     aciklama:
-      "Mir Turizm olarak engelli bireylerimiz, gazilerimiz, sevgi evlerinde büyüyen gençlerimiz ve huzur evi sakinlerimiz için özel günlerde anlamlı, güvenli ve planlı ulaşım desteği sunuyoruz. Bu sayfa, sunduğumuz sosyal destek hizmetlerini, kimlere destek verdiğimizi ve sürecin nasıl ilerlediğini anlatmak için hazırlandı.",
+      "Mir Turizm olarak tekerlekli sandalye kullanan bireyler, yürümekte zorlanan yaşlılar, hastane randevusuna gidecek hastalar ve refakatçili ulaşım ihtiyacı olan kişiler için güvenli, konforlu ve planlı ulaşım hizmeti sunuyoruz.",
     etiketler: [
-      "Engelli Bireyler",
-      "Gazilerimiz",
-      "Sevgi Evi Gençleri",
-      "Huzur Evi Sakinleri",
+      "Engelli Araç",
+      "Engelli Taksi",
+      "Hasta Nakil Aracı",
+      "Hastane Transferi",
     ],
-    anaButon: "Destek İçin Yaz",
+    anaButon: "Randevu ve Fiyat Al",
     ikinciButon: "Hemen Ara",
-    gorsel: "/vip2.jpg",
-    gorselUstYazi: "Mir Turizm Sosyal Destek",
-    gorselBaslik: "Bir yolculuktan fazlası.",
+    gorsel: "/vip1.jpg",
+    gorselUstYazi: "Engelsiz ve Güvenli Ulaşım",
+    gorselBaslik: "Yolculuğunuz güvenle planlanır.",
     gorselAciklama:
-      "Her destek talebi; kişi, gün, ihtiyaç ve uygunluk durumuna göre özenle değerlendirilir.",
+      "Alınacak konum, gidilecek adres, tarih, saat ve ihtiyaç durumuna göre en uygun araç yönlendirilir.",
   },
+
+  istatistikler: [
+    ["7/24", "Bilgi ve Randevu"],
+    ["100%", "Planlı Ulaşım"],
+    ["Güvenli", "Araç Desteği"],
+    ["Refakat", "Uyumlu Hizmet"],
+  ],
 
   ozetKartlar: [
     {
-      icon: HeartHandshake,
-      title: "Sevgi bağı",
-      desc: "Her hizmette insana değer veren, sıcak ve özenli bir yaklaşım.",
+     icon: Accessibility,
+      title: "Engelli araç",
+      desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir ve güvenli ulaşım desteği.",
+    },
+    {
+      icon: Accessibility,
+      title: "Engelli taksi",
+      desc: "Şehir içi hastane, ev, bakım merkezi ve özel adres transferleri için pratik çözüm.",
+    },
+    {
+      icon: Stethoscope,
+      title: "Hasta nakil",
+      desc: "Hastane randevusu, taburcu işlemi ve kontrollü ulaşım ihtiyaçlarına özel hizmet.",
     },
     {
       icon: ShieldCheck,
       title: "Güvenli süreç",
-      desc: "Araç, güzergah ve yolculuk öncesi detaylı planlama.",
-    },
-    {
-      icon: Accessibility,
-      title: "Erişilebilir destek",
-      desc: "İhtiyaca göre asansörlü araç ve güvenli iniş-biniş desteği.",
-    },
-    {
-      icon: CalendarCheck,
-      title: "Planlı ilerleyiş",
-      desc: "Tarih, saat ve uygunluk durumuna göre net hizmet akışı.",
+      desc: "İniş-biniş, sabitleme, güzergah ve zaman planı dikkatle oluşturulur.",
     },
   ] satisfies KartItem[],
 
-  kimlerIcin: {
-    rozet: "Kimler İçin?",
-    baslik: "Desteğimizi en anlamlı anlarda doğru kişilere ulaştırıyoruz.",
+  hizmetler: {
+    rozet: "Hizmetlerimiz",
+    baslik: "Engelli ve hasta ulaşımında ihtiyaç duyulan tüm ana hizmetler.",
     aciklama:
-      "Bu hizmet alanı; toplumumuzda özel hassasiyet gösterdiğimiz kişi ve gruplara, özellikle özel günlerinde destek olmak amacıyla hazırlanmıştır.",
+      "Her hizmette temel amacımız; yolcunun güvenli, rahat, zamanında ve saygılı bir şekilde ulaşımını sağlamaktır.",
     kartlar: [
       {
         icon: Accessibility,
-        title: "Engelli bireylerimiz için",
-        desc: "Ulaşım sürecinde daha fazla desteğe ihtiyaç duyan bireylerimiz için güvenli, erişilebilir ve özenli araç desteği sağlanır.",
+        title: "Engelli Araç Hizmeti",
+        desc: "Tekerlekli sandalye kullanan yolcular için iniş-biniş süreci kolaylaştırılmış, erişilebilir araç desteği sağlanır.",
         image: "/vip1.jpg",
         points: [
-          "Asansörlü araç desteği",
-          "Güvenli sabitleme sistemi",
-          "Kapıdan alım ve güvenli bırakma",
-          "Sabırlı, saygılı ve destekleyici ekip",
+          "Tekerlekli sandalye uyumlu ulaşım",
+          "Güvenli araç içi sabitleme",
+          "Kapıdan alım ve adrese bırakma",
+          "Refakatçi ile yolculuk uyumu",
         ],
-      },
-      {
-        icon: ShieldCheck,
-        title: "Gazilerimiz için",
-        desc: "Bu ülkeye emek vermiş gazilerimizin özel günlerinde yanlarında olmak, Mir Turizm için bir hizmetten önce vefa sorumluluğudur.",
-        image: "/vip-2.jpg",
-        points: [
-          "Özel gün araç desteği",
-          "Saygı ve vefa odaklı yaklaşım",
-          "Konforlu ve güvenli ulaşım",
-          "Tarih ve güzergaha göre planlama",
-        ],
-      },
-      {
-        icon: Heart,
-        title: "Sevgi evlerinde büyüyen gençlerimiz için",
-        desc: "Yeni bir hayata adım atarken, özellikle düğün gibi unutulmaz günlerde araç desteğiyle bu mutluluğa ortak oluyoruz.",
-        image: "/vip11.jpg",
-        points: [
-          "Düğün günü araç desteği",
-          "Gelin aracı planlaması",
-          "Özel gün koordinasyonu",
-          "Anlamlı ve zarif hizmet",
-        ],
-      },
-      {
-        icon: HomeIcon,
-        title: "Huzur evi sakinlerimiz için",
-        desc: "Büyüklerimizin özel günlerinde, ziyaretlerinde veya anlamlı anlarında ulaşımı daha kolay, rahat ve huzurlu hale getiriyoruz.",
-        image: "/vip-4.jpg",
-        points: [
-          "Kapıdan alım desteği",
-          "Rahat ve konforlu yolculuk",
-          "Özenli refakat yaklaşımı",
-          "Saygılı ve sakin hizmet süreci",
-        ],
-      },
-    ] satisfies KartItem[],
-  },
-
-  hizmetler: {
-    rozet: "Neler Yapıyoruz?",
-    baslik: "Sadece araç vermiyoruz; günü, ihtiyacı ve duyguyu birlikte planlıyoruz.",
-    kartlar: [
-      {
-        icon: Car,
-        title: "Özel gün araç tahsisi",
-        desc: "Düğün, nişan, tören, davet ve anlamlı günlerde uygun araç desteği sağlanır.",
       },
       {
         icon: Accessibility,
-        title: "Erişilebilir ulaşım",
-        desc: "İhtiyaca göre asansörlü araç ve güvenli sabitleme sistemiyle yolculuk hazırlanır.",
+        title: "Engelli Taksi",
+        desc: "Şehir içinde hastane, ev, iş yeri, bakım merkezi, otel veya özel adreslere güvenli engelli taksi hizmeti sunulur.",
+        image: "/vip-2.jpg",
+        points: [
+          "Şehir içi transfer",
+          "Randevulu araç yönlendirme",
+          "Yaşlı ve engelli bireylere destek",
+          "Kısa ve uzun mesafe ulaşım",
+        ],
+      },
+      {
+        icon: Stethoscope,
+        title: "Hasta Nakil Aracı",
+        desc: "Yürümekte zorlanan, tedaviye gidecek veya hastaneden çıkış yapacak kişiler için konforlu hasta nakil ulaşımı planlanır.",
+        image: "/vip11.jpg",
+        points: [
+          "Hastane randevusu transferi",
+          "Taburcu sonrası eve ulaşım",
+          "Kontrol ve tedavi günü taşıma",
+          "Dikkatli ve sakin sürüş",
+        ],
       },
       {
         icon: HeartHandshake,
-        title: "Kapıdan alım desteği",
-        desc: "Alınacak nokta belirlenir, kişi güvenli şekilde araca alınır ve varış noktasına ulaştırılır.",
-      },
-      {
-        icon: Users,
-        title: "Aile ve refakat uyumu",
-        desc: "Gerekli durumlarda aile bireyleri veya refakatçilerle uyumlu bir yolculuk planlanır.",
-      },
-      {
-        icon: CalendarCheck,
-        title: "Randevulu ilerleme",
-        desc: "Araç uygunluğu, tarih, saat ve güzergah önceden netleştirilerek süreç yönetilir.",
-      },
-      {
-        icon: Star,
-        title: "Saygılı hizmet dili",
-        desc: "Her yolculukta mahremiyet, nezaket, sabır ve insan onuruna yakışan yaklaşım esas alınır.",
+        title: "Refakatçili Ulaşım Desteği",
+        desc: "Yolculuk sırasında yanında refakatçi bulunması gereken kişiler için araç ve koltuk düzeni ihtiyaca göre hazırlanır.",
+        image: "/vip-4.jpg",
+        points: [
+          "Aile/refakatçi uyumlu planlama",
+          "Kapı önü karşılama",
+          "Güvenli iniş-biniş desteği",
+          "Saygılı ve sabırlı hizmet",
+        ],
       },
     ] satisfies KartItem[],
   },
 
-  gorselAlan: {
-    rozet: "Hizmet Anlayışımız",
-    baslik: "Her yolculuğun arkasında sevgi, bağ ve sorumluluk var.",
-    aciklama:
-      "Mir Turizm sosyal destek hizmetlerinde amaç yalnızca bir noktadan başka bir noktaya ulaşmak değildir. Bizim için önemli olan; kişinin kendini değerli, güvende ve yalnız olmadığını hissetmesidir.",
-    gorseller: [
+  kullanimAlanlari: {
+    rozet: "Nerelerde Kullanılır?",
+    baslik: "Evden hastaneye, hastaneden eve veya özel adreslere güvenli ulaşım.",
+    kartlar: [
       {
-        image: "/vip2.jpg",
-        title: "Güvenli ulaşım",
-        desc: "Her yolculuk öncesi ihtiyaç ve güzergah netleştirilir.",
+        icon: Stethoscope,
+        title: "Hastane randevuları",
+        desc: "Muayene, kontrol, fizik tedavi, diyaliz veya düzenli tedavi süreçleri için planlı ulaşım.",
       },
       {
+        icon: HomeIcon,
+        title: "Taburcu sonrası ulaşım",
+        desc: "Hastaneden eve dönüşlerde hastanın konforuna uygun dikkatli transfer süreci.",
+      },
+      {
+        icon: MapPin,
+        title: "Şehir içi özel adresler",
+        desc: "Ev, otel, bakım merkezi, huzurevi, iş yeri veya özel davet noktalarına ulaşım.",
+      },
+      {
+        icon: Users,
+        title: "Yaşlı birey transferi",
+        desc: "Yürümekte zorlanan büyüklerimiz için sakin, sabırlı ve destekleyici ulaşım hizmeti.",
+      },
+      {
+        icon: CalendarCheck,
+        title: "Randevulu planlama",
+        desc: "Tarih, saat, alınacak yer ve gidilecek adres netleştirilerek araç hazırlanır.",
+      },
+      {
+        icon: ShieldCheck,
+        title: "Güvenli araç içi süreç",
+        desc: "Yolculuk öncesi ihtiyaç değerlendirilir, iniş-biniş ve sabitleme dikkatle yapılır.",
+      },
+    ] satisfies KartItem[],
+  },
+
+  araclar: {
+    rozet: "Araç Seçenekleri",
+    baslik: "İhtiyaca göre uygun araç tipi belirlenir.",
+    kartlar: [
+      {
+        title: "Engelli Taksi",
+        desc: "Şehir içi kısa ve orta mesafe ulaşım ihtiyaçları için pratik çözüm.",
+        image: "/vip-2.jpg",
+      },
+      {
+        title: "Engelli Araç",
+        desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir araç desteği.",
         image: "/vip1.jpg",
-        title: "Erişilebilir araç",
-        desc: "İniş-biniş ve araç içi güvenlik süreci dikkatle yürütülür.",
       },
       {
+        title: "Hasta Nakil Aracı",
+        desc: "Hastane, tedavi ve taburcu sonrası ulaşım için konforlu taşıma.",
         image: "/vip11.jpg",
-        title: "Özel gün desteği",
-        desc: "Mutluluk taşıyan günlerde Mir Turizm yanında olur.",
       },
     ],
   },
 
-  surec: {
-    rozet: "Süreç Nasıl İlerliyor?",
-    baslik: "Talep geldikten sonra her adım sade ve net şekilde planlanır.",
-    adimlar: [
+  nedenBiz: {
+    rozet: "Neden Mir Turizm?",
+    baslik: "Hasta ve engelli ulaşımında güven, zamanlama ve hassasiyet önemlidir.",
+    kartlar: [
       {
-        title: "Talep alınır",
-        desc: "Kim için destek istendiği, tarih, saat, alınacak yer ve gidilecek nokta öğrenilir.",
+        icon: ShieldCheck,
+        title: "Güvenli",
+        desc: "Yolculuk öncesi ihtiyaçlar alınır, araç ve güzergah buna göre hazırlanır.",
       },
       {
-        title: "Uygunluk kontrol edilir",
-        desc: "Araç durumu, destek kapsamı, güzergah ve ihtiyaç türü değerlendirilir.",
+        icon: Clock,
+        title: "Tam zamanında",
+        desc: "Hastane randevusu ve planlı ulaşım süreçlerinde saat hassasiyetiyle hareket edilir.",
+      },
+      {
+        icon: Star,
+        title: "Konforlu",
+        desc: "Yolcunun durumuna göre rahat, sakin ve özenli bir yolculuk deneyimi sunulur.",
+      },
+      {
+        icon: Sparkles,
+        title: "Hijyenik",
+        desc: "Araç temizliği, düzeni ve yolculuk konforu hizmetin önemli parçasıdır.",
+      },
+    ] satisfies KartItem[],
+  },
+
+  surec: {
+    rozet: "Süreç Nasıl İlerler?",
+    baslik: "Randevu oluşturmak için birkaç bilgi yeterlidir.",
+    adimlar: [
+      {
+        title: "Bilgiler alınır",
+        desc: "Alınacak adres, gidilecek adres, tarih, saat ve yolcunun ihtiyaç durumu öğrenilir.",
+      },
+      {
+        title: "Araç belirlenir",
+        desc: "Engelli araç, engelli taksi veya hasta nakil aracı ihtiyaca göre seçilir.",
       },
       {
         title: "Plan netleşir",
-        desc: "Araç, sürücü, saat ve yolculuk detayları karşılıklı olarak kesinleştirilir.",
+        desc: "Saat, güzergah, refakatçi durumu ve fiyat bilgisi karşılıklı olarak netleştirilir.",
       },
       {
-        title: "Hizmet sağlanır",
-        desc: "Belirlenen saatte güvenli, konforlu ve özenli ulaşım desteği verilir.",
+        title: "Transfer yapılır",
+        desc: "Belirlenen saatte güvenli, konforlu ve dikkatli ulaşım hizmeti sağlanır.",
+      },
+    ],
+  },
+
+  yorumlar: {
+    rozet: "Hizmet Anlayışımız",
+    baslik: "Bu alanda güven veren hizmet dili çok önemlidir.",
+    kartlar: [
+      {
+        title: "Hastane ulaşımında destek",
+        desc: "Randevu saatine yetişmek, iniş-biniş sürecini doğru yönetmek ve yolcunun kendini güvende hissetmesini sağlamak önceliğimizdir.",
+      },
+      {
+        title: "Yaşlı ve engelli bireylere hassasiyet",
+        desc: "Her yolcuya sabırlı, saygılı ve dikkatli yaklaşılır. Yolculuk yalnızca ulaşım değil, güven sürecidir.",
+      },
+      {
+        title: "Aileler için rahatlık",
+        desc: "Yakınınızın ulaşımı önceden planlandığında hem hasta hem aile için süreç daha kontrollü ilerler.",
       },
     ],
   },
 
   notlar: {
     rozet: "Önemli Bilgilendirme",
-    baslik: "Destek kapsamı uygunluk ve planlamaya göre ilerler.",
+    baslik: "Doğru araç için ihtiyaç bilgisi önceden alınmalıdır.",
     maddeler: [
-      "Ücretsiz destek öncelikle düğün ve özel gün araç tahsisi kapsamında değerlendirilir.",
-      "Hizmet; araç müsaitliği, tarih, güzergah ve ihtiyaç durumuna göre planlanır.",
-      "Daha sağlıklı planlama için mümkünse en az 1 hafta önceden iletişime geçilmesi önerilir.",
-      "Diğer özel ulaşım talepleri güzergah, hizmet türü ve mesafeye göre ayrıca değerlendirilir.",
+      "Engelli araç, engelli taksi ve hasta nakil aracı hizmetleri randevulu olarak planlanır.",
+      "Alınacak adres, gidilecek adres, tarih, saat ve yolcunun hareket durumu önceden paylaşılmalıdır.",
+      "Tekerlekli sandalye kullanımı, refakatçi durumu ve kat/asansör bilgisi hizmet planlamasında önemlidir.",
+      "Fiyatlandırma mesafe, güzergah, bekleme süresi ve hizmet türüne göre belirlenir.",
     ],
   },
 
   cta: {
-    rozet: "İletişime Geçin",
-    baslik: "Mir Turizm ile özel gününüzü birlikte planlayalım.",
+    rozet: "Randevu ve Bilgi",
+    baslik: "Engelli araç, engelli taksi veya hasta nakil aracı için hemen iletişime geçin.",
     aciklama:
-      "Kimin için destek almak istediğinizi, tarih ve güzergah bilgisini WhatsApp üzerinden iletin. Uygunluk durumuna göre size en doğru planı hazırlayalım.",
-    whatsapp: "WhatsApp’tan Yaz",
-    telefon: "Hemen Ara",
+      "WhatsApp üzerinden alınacak yer, gidilecek adres, tarih, saat ve yolcunun ihtiyaç durumunu gönderin. Size en uygun araç ve hizmet planı hazırlansın.",
+    whatsapp: "WhatsApp’tan Randevu Al",
+    telefon: "Telefonla Ara",
   },
 };
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#12091f] tum-yazilar-rgb">
+    <main className="min-h-screen overflow-hidden bg-[#12091f] text-[#ffeec7]">
+      <style jsx global>{`
+        @keyframes rgbText {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        @keyframes softPulse {
+          0%,
+          100% {
+            opacity: 0.55;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 0.9;
+            transform: scale(1.08);
+          }
+        }
+
+        @keyframes softFloat {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-8px);
+          }
+        }
+
+        .rgb-love-text {
+          background: linear-gradient(
+            90deg,
+            #ffe66d,
+            #ff8a00,
+            #23d5ff,
+            #ff5c8a,
+            #ffe66d
+          );
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: rgbText 5s linear infinite;
+        }
+
+        .bg-love {
+          background: linear-gradient(
+            90deg,
+            #ff335f,
+            #ff8a00,
+            #23d5ff,
+            #7c3aed,
+            #ff335f
+          );
+          background-size: 300% 100%;
+          animation: rgbText 5s linear infinite;
+        }
+
+        .rgb-love-card {
+          position: relative;
+          overflow: hidden;
+          border-radius: 2rem;
+          border: 1px solid rgba(103, 232, 249, 0.2);
+          background: rgba(36, 16, 57, 0.9);
+          box-shadow: 0 25px 90px rgba(15, 23, 42, 0.22);
+        }
+
+        .animate-softPulse {
+          animation: softPulse 7s ease-in-out infinite;
+        }
+
+        .animate-softPulseSlow {
+          animation: softPulse 9s ease-in-out infinite;
+        }
+      `}</style>
+
       <section className="relative overflow-hidden px-4 pb-16 pt-6 sm:px-6 lg:pb-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,92,138,0.24),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(35,213,255,0.18),transparent_36%),linear-gradient(135deg,#16071f_0%,#2a1044_46%,#0e2846_100%)]" />
         <div className="absolute left-[-160px] top-[-160px] h-[480px] w-[480px] animate-softPulse rounded-full bg-[#ff5c8a]/20 blur-[120px]" />
@@ -292,7 +427,7 @@ export default function Home() {
             </div>
 
             <a
-              href={`https://wa.me/${phone}?text=Merhaba,%20Mir%20Turizm%20sosyal%20destek%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
+              href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20ve%20hasta%20nakil%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
               target="_blank"
               rel="noreferrer"
               className="hidden rounded-full bg-love px-5 py-3 text-sm font-black text-white shadow-lg transition hover:-translate-y-1 md:inline-flex"
@@ -324,7 +459,7 @@ export default function Home() {
                 </span>
               </h2>
 
-              <p className="mt-6 max-w-2xl text-[15px] leading-7 rgb-love-text sm:text-lg sm:leading-8">
+              <p className="mt-6 max-w-2xl text-[15px] leading-7 text-[#d8f7ff] sm:text-lg sm:leading-8">
                 {sayfaIcerigi.hero.aciklama}
               </p>
 
@@ -341,7 +476,7 @@ export default function Home() {
 
               <div className="mt-8 grid gap-3 sm:flex">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20sosyal%20destek%20kapsam%C4%B1nda%20ara%C3%A7%20deste%C4%9Fi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AKim%20i%C3%A7in:%0ATarih:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:`}
+                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20/%20engelli%20taksi%20/%20hasta%20nakil%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AYolcunun%20durumu:`}
                   target="_blank"
                   rel="noreferrer"
                   className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-love px-6 py-4 text-sm font-black text-white shadow-xl shadow-fuchsia-500/25 transition hover:-translate-y-1 sm:text-base"
@@ -357,6 +492,20 @@ export default function Home() {
                   <Phone size={18} />
                   {sayfaIcerigi.hero.ikinciButon}
                 </a>
+              </div>
+
+              <div className="mt-9 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {sayfaIcerigi.istatistikler.map(([title, desc]) => (
+                  <div
+                    key={title}
+                    className="rounded-3xl border border-fuchsia-300/20 bg-[#241039]/80 p-4 shadow-xl backdrop-blur-xl"
+                  >
+                    <p className="text-xl font-black rgb-love-text">{title}</p>
+                    <p className="mt-1 text-xs font-semibold text-[#90e8ff]">
+                      {desc}
+                    </p>
+                  </div>
+                ))}
               </div>
             </motion.div>
 
@@ -389,7 +538,7 @@ export default function Home() {
                     <h3 className="mt-2 text-2xl font-black rgb-love-text">
                       {sayfaIcerigi.hero.gorselBaslik}
                     </h3>
-                    <p className="mt-2 text-sm leading-6 rgb-love-text">
+                    <p className="mt-2 text-sm leading-6 text-[#d8f7ff]">
                       {sayfaIcerigi.hero.gorselAciklama}
                     </p>
                   </div>
@@ -419,7 +568,7 @@ export default function Home() {
                   <h3 className="text-lg font-black rgb-love-text">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 rgb-love-text">
+                  <p className="mt-2 text-sm leading-6 text-[#d8f7ff]">
                     {item.desc}
                   </p>
                 </motion.div>
@@ -439,13 +588,13 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-3xl">
             <p className="text-xs font-black uppercase tracking-[0.28em] rgb-love-text">
-              {sayfaIcerigi.kimlerIcin.rozet}
+              {sayfaIcerigi.hizmetler.rozet}
             </p>
             <h2 className="mt-4 text-3xl font-black leading-tight rgb-love-text sm:text-5xl">
-              {sayfaIcerigi.kimlerIcin.baslik}
+              {sayfaIcerigi.hizmetler.baslik}
             </h2>
-            <p className="mt-5 text-sm leading-7 rgb-love-text sm:text-base sm:leading-8">
-              {sayfaIcerigi.kimlerIcin.aciklama}
+            <p className="mt-5 text-sm leading-7 text-[#d8f7ff] sm:text-base sm:leading-8">
+              {sayfaIcerigi.hizmetler.aciklama}
             </p>
           </div>
 
@@ -456,7 +605,7 @@ export default function Home() {
             viewport={{ once: true, amount: 0.12 }}
             className="grid gap-6 lg:grid-cols-2"
           >
-            {sayfaIcerigi.kimlerIcin.kartlar.map((item) => {
+            {sayfaIcerigi.hizmetler.kartlar.map((item) => {
               const Icon = item.icon;
 
               return (
@@ -465,50 +614,50 @@ export default function Home() {
                   key={item.title}
                   className="rgb-love-card"
                 >
-              <div className="overflow-hidden rounded-[1.9rem] bg-[#1d102f]/94 backdrop-blur-xl">
-  <div className="relative h-[260px] overflow-hidden bg-[#12091f] sm:h-[360px] lg:h-[420px]">
-    <img
-      src={item.image}
-      alt={item.title}
-      className="absolute inset-0 h-full w-full object-cover object-center scale-[0.97] transition duration-700 hover:scale-100"
-    />
+                  <div className="overflow-hidden rounded-[1.9rem] bg-[#1d102f]/94 backdrop-blur-xl">
+                    <div className="relative h-[260px] overflow-hidden bg-[#12091f] sm:h-[360px] lg:h-[420px]">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="absolute inset-0 h-full w-full object-cover object-center transition duration-700 hover:scale-105"
+                      />
 
-    <div className="absolute inset-0 bg-gradient-to-t from-[#12091f]/80 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#12091f]/85 via-transparent to-transparent" />
 
-    <div className="absolute bottom-4 left-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-love text-white shadow-xl">
-      <Icon size={28} />
-    </div>
-  </div>
+                      <div className="absolute bottom-4 left-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-love text-white shadow-xl">
+                        <Icon size={28} />
+                      </div>
+                    </div>
 
-  <div className="p-6 sm:p-8">
-    <h3 className="text-2xl font-black rgb-love-text">
-      {item.title}
-    </h3>
+                    <div className="p-6 sm:p-8">
+                      <h3 className="text-2xl font-black rgb-love-text">
+                        {item.title}
+                      </h3>
 
-    <p className="mt-4 text-sm leading-7 rgb-love-text sm:text-base sm:leading-8">
-      {item.desc}
-    </p>
+                      <p className="mt-4 text-sm leading-7 text-[#d8f7ff] sm:text-base sm:leading-8">
+                        {item.desc}
+                      </p>
 
-    <div className="mt-6 grid gap-3 sm:grid-cols-2">
-      {item.points?.map((point) => (
-        <div
-          key={point}
-          className="rounded-2xl border border-cyan-300/15 bg-[#12091f]/55 p-4"
-        >
-          <div className="flex gap-2">
-            <CheckCircle2
-              className="mt-1 shrink-0 text-[#23d5ff]"
-              size={18}
-            />
-            <p className="text-sm font-bold leading-6 rgb-love-text">
-              {point}
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+                      <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                        {item.points?.map((point) => (
+                          <div
+                            key={point}
+                            className="rounded-2xl border border-cyan-300/15 bg-[#12091f]/55 p-4"
+                          >
+                            <div className="flex gap-2">
+                              <CheckCircle2
+                                className="mt-1 shrink-0 text-[#23d5ff]"
+                                size={18}
+                              />
+                              <p className="text-sm font-bold leading-6 text-[#d8f7ff]">
+                                {point}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
               );
             })}
@@ -522,15 +671,15 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="mb-10 max-w-3xl">
             <p className="text-xs font-black uppercase tracking-[0.28em] rgb-love-text">
-              {sayfaIcerigi.hizmetler.rozet}
+              {sayfaIcerigi.kullanimAlanlari.rozet}
             </p>
             <h2 className="mt-4 text-3xl font-black leading-tight rgb-love-text sm:text-5xl">
-              {sayfaIcerigi.hizmetler.baslik}
+              {sayfaIcerigi.kullanimAlanlari.baslik}
             </h2>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {sayfaIcerigi.hizmetler.kartlar.map((item, index) => {
+            {sayfaIcerigi.kullanimAlanlari.kartlar.map((item, index) => {
               const Icon = item.icon;
 
               return (
@@ -556,7 +705,7 @@ export default function Home() {
                     {item.title}
                   </h3>
 
-                  <p className="relative mt-3 text-sm font-medium leading-7 rgb-love-text">
+                  <p className="relative mt-3 text-sm font-medium leading-7 text-[#d8f7ff]">
                     {item.desc}
                   </p>
                 </motion.div>
@@ -570,18 +719,15 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-3xl">
             <p className="text-xs font-black uppercase tracking-[0.28em] rgb-love-text">
-              {sayfaIcerigi.gorselAlan.rozet}
+              {sayfaIcerigi.araclar.rozet}
             </p>
             <h2 className="mt-4 text-3xl font-black leading-tight rgb-love-text sm:text-5xl">
-              {sayfaIcerigi.gorselAlan.baslik}
+              {sayfaIcerigi.araclar.baslik}
             </h2>
-            <p className="mt-5 text-sm leading-7 rgb-love-text sm:text-base sm:leading-8">
-              {sayfaIcerigi.gorselAlan.aciklama}
-            </p>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
-            {sayfaIcerigi.gorselAlan.gorseller.map((item, index) => (
+            {sayfaIcerigi.araclar.kartlar.map((item, index) => (
               <motion.div
                 variants={kartAnimasyon}
                 initial="gizli"
@@ -603,13 +749,57 @@ export default function Home() {
                     <h3 className="text-xl font-black rgb-love-text">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-6 rgb-love-text">
+                    <p className="mt-2 text-sm leading-6 text-[#d8f7ff]">
                       {item.desc}
                     </p>
                   </div>
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-24">
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,#16071f_0%,#2a1044_46%,#0e2846_100%)]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <div className="mb-10 max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.28em] rgb-love-text">
+              {sayfaIcerigi.nedenBiz.rozet}
+            </p>
+            <h2 className="mt-4 text-3xl font-black leading-tight rgb-love-text sm:text-5xl">
+              {sayfaIcerigi.nedenBiz.baslik}
+            </h2>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {sayfaIcerigi.nedenBiz.kartlar.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <motion.div
+                  variants={kartAnimasyon}
+                  initial="gizli"
+                  whileInView="goster"
+                  viewport={{ once: true, amount: 0.16 }}
+                  key={item.title}
+                  className="rounded-[2rem] border border-cyan-300/20 bg-[#241039]/90 p-6 shadow-xl"
+                >
+                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-love text-white">
+                    <Icon size={26} />
+                  </div>
+
+                  <h3 className="text-xl font-black rgb-love-text">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-[#d8f7ff]">
+                    {item.desc}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -646,7 +836,51 @@ export default function Home() {
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 rgb-love-text">
+                <p className="mt-3 text-sm leading-7 text-[#d8f7ff]">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-16 sm:px-6 sm:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.28em] rgb-love-text">
+              {sayfaIcerigi.yorumlar.rozet}
+            </p>
+            <h2 className="mt-4 text-3xl font-black leading-tight rgb-love-text sm:text-5xl">
+              {sayfaIcerigi.yorumlar.baslik}
+            </h2>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {sayfaIcerigi.yorumlar.kartlar.map((item) => (
+              <motion.div
+                variants={kartAnimasyon}
+                initial="gizli"
+                whileInView="goster"
+                viewport={{ once: true, amount: 0.16 }}
+                key={item.title}
+                className="rounded-[2rem] border border-cyan-300/20 bg-[#241039]/90 p-6 shadow-xl"
+              >
+                <div className="mb-4 flex gap-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star
+                      key={star}
+                      size={18}
+                      className="fill-[#ffb86b] text-[#ffb86b]"
+                    />
+                  ))}
+                </div>
+
+                <h3 className="text-xl font-black rgb-love-text">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-[#d8f7ff]">
                   {item.desc}
                 </p>
               </motion.div>
@@ -675,7 +909,7 @@ export default function Home() {
                 >
                   <div className="flex gap-3">
                     <CheckCircle2 className="mt-1 shrink-0 text-[#23d5ff]" />
-                    <p className="text-sm font-bold leading-7 rgb-love-text">
+                    <p className="text-sm font-bold leading-7 text-[#d8f7ff]">
                       {item}
                     </p>
                   </div>
@@ -699,14 +933,14 @@ export default function Home() {
                   {sayfaIcerigi.cta.baslik}
                 </h2>
 
-                <p className="mt-5 text-sm leading-7 rgb-love-text sm:text-base sm:leading-8">
+                <p className="mt-5 text-sm leading-7 text-[#d8f7ff] sm:text-base sm:leading-8">
                   {sayfaIcerigi.cta.aciklama}
                 </p>
               </div>
 
               <div className="grid gap-3">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20Mir%20Turizm%20sosyal%20destek%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AKim%20i%C3%A7in:%0ATarih:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:`}
+                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20/%20engelli%20taksi%20/%20hasta%20nakil%20arac%C4%B1%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AYolcunun%20durumu:`}
                   target="_blank"
                   rel="noreferrer"
                   className="flex min-h-16 items-center justify-center gap-3 rounded-3xl bg-love px-7 py-5 text-base font-black text-white shadow-xl transition hover:-translate-y-1"
@@ -727,6 +961,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-cyan-300/20 bg-[#12091f] px-4 pb-24 pt-10 sm:px-6 sm:pb-12">
+        <div className="mx-auto grid max-w-7xl gap-8 text-sm text-[#d8f7ff] md:grid-cols-3">
+          <div>
+            <h3 className="text-lg font-black rgb-love-text">Mir Turizm</h3>
+            <p className="mt-3 leading-7">
+              Engelli araç, engelli taksi, hasta nakil aracı, hastane transferi
+              ve özel ulaşım hizmetleri.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="mb-3 font-black rgb-love-text">Hizmetler</h4>
+            <p>Engelli Araç</p>
+            <p>Engelli Taksi</p>
+            <p>Hasta Nakil Aracı</p>
+            <p>Hastane Transferi</p>
+          </div>
+
+          <div>
+            <h4 className="mb-3 font-black rgb-love-text">İletişim</h4>
+            <p className="flex items-center gap-2">
+              <MapPin size={16} /> İstanbul / Türkiye
+            </p>
+            <p className="mt-2 flex items-center gap-2">
+              <Phone size={16} /> +90 553 354 50 18
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <div className="fixed bottom-3 left-3 right-3 z-50 grid grid-cols-2 gap-2 sm:bottom-5 sm:left-auto sm:right-5 sm:flex sm:w-auto">
+        <a
+          href={`tel:+${phone}`}
+          className="flex items-center justify-center gap-2 rounded-full bg-[#241039] px-4 py-3 text-sm font-black text-white shadow-2xl ring-1 ring-cyan-300/20 transition hover:-translate-y-1"
+        >
+          <Phone size={18} />
+          Ara
+        </a>
+
+        <a
+          href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20/%20engelli%20taksi%20/%20hasta%20nakil%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center justify-center gap-2 rounded-full bg-love px-4 py-3 text-sm font-black text-white shadow-2xl transition hover:-translate-y-1"
+        >
+          <MessageCircle size={18} />
+          WhatsApp
+        </a>
+      </div>
     </main>
   );
 }
