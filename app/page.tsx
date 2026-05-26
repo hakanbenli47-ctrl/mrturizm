@@ -89,90 +89,90 @@ type KartItem = {
 };
 
 const sayfaIcerigi = {
-  marka: "MİR TURİZM",
+  marka: "MİR ULAŞIM",
 
   header: {
-    kucukYazi: "MİR TURİZM",
-    baslik: "Engelli Araç Kiralama • Engelli Taksi • Gelin Arabası",
+    kucukYazi: "MİR ULAŞIM",
+    baslik: "İstanbul Engelli Taksi • Engelli Ulaşım • Tekerlekli Sandalye Uyumlu Araç",
     buton: "WhatsApp",
   },
 
   hero: {
-    rozet: "Şahsa özel engelli araç kiralama ve planlı ulaşım hizmeti",
-    baslik1: "Engelli araç",
-    baslik2: "kiralama hizmeti.",
+    rozet: "Tuzla merkezli İstanbul engelli taksi ve planlı ulaşım hizmeti",
+    baslik1: "İstanbul engelli",
+    baslik2: "taksi hizmeti.",
     aciklama:
-      "Mir Turizm olarak tekerlekli sandalye kullanan bireyler ve erişilebilir ulaşıma ihtiyaç duyan misafirlerimiz için şahsa özel engelli araç kiralama hizmeti sunuyoruz. Gezi, yemek, düğün organizasyonu, gelin arabası, planlı etkinlikler ve fizik tedaviye gidiş-geliş süreçleri için güvenli, konforlu ve randevulu ulaşım planı hazırlıyoruz.",
+      "Mir Ulaşım, Tuzla merkezli olarak İstanbul genelinde engelli taksi, engelli ulaşım ve tekerlekli sandalye uyumlu araç hizmeti sunar. Pendik, Kartal, Maltepe, Sultanbeyli, Gebze ve çevre bölgelerde randevulu, güvenli ve konforlu ulaşım planı hazırlanır. Gezi, yemek, düğün organizasyonu, gelin arabası, planlı etkinlik ve fizik tedaviye gidiş-geliş için hızlı bilgi alabilirsiniz.",
     etiketler: [
-      "Engelli Araç Kiralama",
-      "Engelli Taksi",
-      "Gelin Arabası",
-      "Fizik Tedavi Gidiş-Geliş",
+      "İstanbul Engelli Taksi",
+      "Engelli Ulaşım",
+      "Tekerlekli Sandalye Uyumlu Araç",
+      "Tuzla • Pendik • Kartal",
     ],
-    anaButon: "Randevu ve Fiyat Al",
-    ikinciButon: "Hemen Ara",
+    anaButon: "WhatsApp’tan Hemen Bilgi Al",
+    ikinciButon: "Telefonla Hemen Ara",
     gorsel: "/vip1.jpg",
-    gorselUstYazi: "Engelsiz ve Şahsa Özel Ulaşım",
-    gorselBaslik: "Her yolculuk ihtiyaca göre planlanır.",
+    gorselUstYazi: "İstanbul Engelli Ulaşım",
+    gorselBaslik: "Tuzla’dan İstanbul geneline planlı ulaşım.",
     gorselAciklama:
-      "Alınacak konum, gidilecek adres, tarih, saat ve kullanım amacına göre en uygun engelli araç kiralama planı oluşturulur.",
+      "Alınacak konum, gidilecek adres, tarih, saat ve kullanım amacına göre engelli taksi ve tekerlekli sandalye uyumlu araç planı oluşturulur.",
   },
 
   istatistikler: [
-    ["1 Gün", "Önceden Randevu"],
+    ["Tuzla", "Merkezli Hizmet"],
+    ["İstanbul", "Geneli Ulaşım"],
     ["En Az", "3 Saat Önce"],
-    ["Şahsa Özel", "Ulaşım Planı"],
-    ["Konforlu", "Engelli Araç"],
+    ["7/24", "Bilgi ve Randevu"],
   ],
 
   ozetKartlar: [
     {
       icon: Accessibility,
-      title: "Engelli araç kiralama",
-      desc: "Tekerlekli sandalye kullanan bireyler için güvenli, konforlu ve erişilebilir araç kiralama hizmeti.",
+      title: "İstanbul engelli taksi",
+      desc: "İstanbul içinde engelli bireyler için tekerlekli sandalye uyumlu araçlarla randevulu ulaşım hizmeti.",
     },
     {
       icon: Car,
-      title: "Engelli taksi",
-      desc: "Şehir içi gezi, yemek, fizik tedavi, organizasyon ve özel adres ulaşımları için pratik çözüm.",
+      title: "Engelli ulaşım",
+      desc: "Tuzla, Pendik, Kartal, Maltepe ve çevre bölgelerde planlı, güvenli ve konforlu ulaşım desteği.",
     },
     {
       icon: CalendarCheck,
-      title: "Randevulu hizmet",
-      desc: "Araç uygunluğu için 1 gün önceden ya da en az 3 saat önceden randevu alınmalıdır.",
+      title: "Tekerlekli sandalye uyumlu araç",
+      desc: "Tekerlekli sandalye kullanan yolcular için iniş-binişi kolaylaştıran özel donanımlı araç desteği.",
     },
     {
       icon: ShieldCheck,
-      title: "Güvenli süreç",
-      desc: "İniş-biniş, araç içi konfor, güzergah ve zaman planı dikkatle oluşturulur.",
+      title: "Hızlı aksiyon",
+      desc: "Alınacak yer, gidilecek yer ve saat bilgisi gönderildiğinde en uygun ulaşım planı hızlıca netleştirilir.",
     },
   ] satisfies KartItem[],
 
   hizmetler: {
     rozet: "Hizmetlerimiz",
-    baslik: "Engelli bireylere özel araç kiralama ve ulaşım çözümleri.",
+    baslik: "İstanbul engelli taksi ve engelli ulaşım hizmetlerimiz.",
     aciklama:
-      "Bu hizmet alanı tamamen engelli bireylerin günlük yaşam, sosyal etkinlik, özel gün ve planlı ulaşım ihtiyaçlarına yönelik şahsa özel araç kiralama hizmetidir.",
+      "Mir Ulaşım; İstanbul, Tuzla, Pendik, Kartal, Maltepe, Sultanbeyli ve Gebze çevresinde engelli bireylerin günlük yaşam, özel gün ve planlı ulaşım ihtiyaçları için randevulu hizmet sunar.",
     kartlar: [
       {
         icon: Accessibility,
-        title: "Engelli Araç Kiralama",
-        desc: "Tekerlekli sandalye kullanan bireyler için iniş-biniş süreci kolay, konforlu ve erişilebilir araç kiralama hizmeti sunulur.",
+        title: "İstanbul Engelli Taksi",
+        desc: "İstanbul genelinde engelli bireyler için tekerlekli sandalye uyumlu araçlarla randevulu engelli taksi hizmeti sunulur.",
         image: "/vip1.jpg",
         points: [
-          "Tekerlekli sandalye uyumlu araç",
-          "Şahsa özel ulaşım planı",
+          "Tuzla merkezli hizmet",
+          "Pendik, Kartal, Maltepe ulaşım",
           "Kapıdan alım ve adrese bırakma",
           "Güzergaha göre fiyatlandırma",
         ],
       },
       {
         icon: Car,
-        title: "Engelli Taksi",
-        desc: "Şehir içi kısa ve orta mesafe ulaşımlarda engelli bireylerin sosyal yaşamına uygun, randevulu taksi hizmeti sağlanır.",
+        title: "Engelli Ulaşım",
+        desc: "Şehir içi kısa ve orta mesafe ulaşımlarda engelli bireylerin sosyal yaşamına uygun, randevulu ulaşım desteği sağlanır.",
         image: "/vip-2.jpg",
         points: [
-          "Şehir içi ulaşım",
+          "İstanbul içi ulaşım",
           "Randevulu araç yönlendirme",
           "Gezi, yemek ve özel adres transferi",
           "Kısa ve uzun mesafe ulaşım",
@@ -180,25 +180,25 @@ const sayfaIcerigi = {
       },
       {
         icon: CalendarCheck,
-        title: "Düğün Organizasyonu & Gelin Arabası",
-        desc: "Düğün, nişan ve özel günlerde engelli bireylerin ulaşım sürecini kolaylaştırmak için gelin arabası ve organizasyon ulaşımı planlanır.",
+        title: "Tekerlekli Sandalye Uyumlu Araç",
+        desc: "Tekerlekli sandalye kullanan yolcular için iniş-biniş kolaylığı sağlayan özel donanımlı araçlarla ulaşım planlanır.",
         image: "/vip11.jpg",
         points: [
-          "Gelin arabası hizmeti",
-          "Düğün günü ulaşım planı",
-          "Organizasyon saatine göre planlama",
-          "1 gün önceden randevu önerilir",
+          "Tekerlekli sandalye uyumlu araç",
+          "Güvenli iniş-biniş desteği",
+          "Konforlu şehir içi transfer",
+          "Önceden randevu önerilir",
         ],
       },
       {
         icon: Clock,
-        title: "Fizik Tedavi Gidiş-Geliş",
-        desc: "Fizik tedavi merkezine düzenli veya tek seferlik gidiş-geliş ihtiyaçları için engelli bireye özel ulaşım planı oluşturulur.",
+        title: "Tuzla Engelli Ulaşım",
+        desc: "Tuzla merkezli olarak Pendik, Kartal, Maltepe, Sultanbeyli, Gebze ve çevre bölgelerde engelli ulaşım planı oluşturulur.",
         image: "/vip-4.jpg",
         points: [
-          "Fizik tedaviye gidiş-geliş",
-          "Düzenli randevu planı",
-          "Saat hassasiyetine uygun ulaşım",
+          "Tuzla çıkışlı planlama",
+          "Pendik ve Kartal ulaşım",
+          "Maltepe ve Gebze çevresi",
           "En az 3 saat önce randevu",
         ],
       },
@@ -207,7 +207,7 @@ const sayfaIcerigi = {
 
   kullanimAlanlari: {
     rozet: "Nerelerde Kullanılır?",
-    baslik: "Günlük yaşamdan özel organizasyonlara kadar şahsa özel ulaşım.",
+    baslik: "İstanbul’da günlük yaşamdan özel organizasyonlara kadar engelli ulaşım.",
     kartlar: [
       {
         icon: Sparkles,
@@ -247,18 +247,18 @@ const sayfaIcerigi = {
     baslik: "İhtiyaca ve kullanım amacına göre uygun araç planlanır.",
     kartlar: [
       {
-        title: "Engelli Araç Kiralama",
-        desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir ve konforlu araç kiralama.",
+        title: "İstanbul Engelli Taksi",
+        desc: "Tekerlekli sandalye kullanan bireyler için erişilebilir, konforlu ve randevulu ulaşım.",
         image: "/vip1.jpg",
       },
       {
-        title: "Engelli Taksi",
-        desc: "Şehir içi ulaşım, gezi, yemek ve özel adres transferleri için randevulu hizmet.",
+        title: "Engelli Ulaşım",
+        desc: "Tuzla, Pendik, Kartal, Maltepe ve çevre bölgelerde şehir içi ulaşım desteği.",
         image: "/vip-2.jpg",
       },
       {
-        title: "Gelin Arabası",
-        desc: "Düğün organizasyonlarında özel günün akışına uygun gelin arabası planlaması.",
+        title: "Tekerlekli Sandalye Uyumlu Araç",
+        desc: "İniş-biniş kolaylığı ve güvenli yolculuk için özel donanımlı araç planlaması.",
         image: "/vip11.jpg",
       },
     ],
@@ -266,7 +266,7 @@ const sayfaIcerigi = {
 
   nedenBiz: {
     rozet: "Neden Mir Turizm?",
-    baslik: "Engelli araç kiralama hizmetinde güven, zamanlama ve konfor önemlidir.",
+    baslik: "Engelli taksi hizmetinde güven, zamanlama ve doğru planlama önemlidir.",
     kartlar: [
       {
         icon: ShieldCheck,
@@ -316,7 +316,7 @@ const sayfaIcerigi = {
 
   yorumlar: {
     rozet: "Hizmet Anlayışımız",
-    baslik: "Engelli ulaşımında güven veren, saygılı ve planlı hizmet.",
+    baslik: "İstanbul engelli ulaşımında güven veren, saygılı ve planlı hizmet.",
     kartlar: [
       {
         title: "Sosyal yaşama erişim",
@@ -335,12 +335,12 @@ const sayfaIcerigi = {
 
   notlar: {
     rozet: "Önemli Bilgilendirme",
-    baslik: "Doğru araç için randevu ve ihtiyaç bilgisi önceden alınmalıdır.",
+    baslik: "En uygun engelli ulaşım planı için bilgilerinizi önceden paylaşın.",
     maddeler: [
-      "Engelli araç kiralama ve engelli taksi hizmetleri randevulu olarak planlanır.",
+      "İstanbul engelli taksi ve engelli ulaşım hizmetleri randevulu olarak planlanır.",
       "Randevu için 1 gün önceden iletişime geçilmesi önerilir.",
       "Acil planlamalarda en az 3 saat önceden randevu alınmalıdır.",
-      "Alınacak adres, gidilecek adres, tarih, saat ve kullanım amacı önceden paylaşılmalıdır.",
+      "Alınacak adres, gidilecek adres, tarih, saat ve kullanım amacı WhatsApp üzerinden paylaşılmalıdır.",
       "Gelin arabası ve düğün organizasyonu taleplerinde tarih uygunluğu ayrıca kontrol edilir.",
       "Fiyatlandırma mesafe, güzergah, bekleme süresi ve hizmet türüne göre belirlenir.",
     ],
@@ -348,10 +348,10 @@ const sayfaIcerigi = {
 
   cta: {
     rozet: "Randevu ve Bilgi",
-    baslik: "Engelli araç kiralama, engelli taksi veya gelin arabası için iletişime geçin.",
+    baslik: "İstanbul engelli taksi ve engelli ulaşım için hemen iletişime geçin.",
     aciklama:
-      "WhatsApp üzerinden alınacak yer, gidilecek adres, tarih, saat ve kullanım amacını gönderin. Size en uygun şahsa özel ulaşım planı hazırlansın.",
-    whatsapp: "WhatsApp’tan Randevu Al",
+      "WhatsApp üzerinden alınacak yer, gidilecek adres, tarih, saat ve kullanım amacını gönderin. Tuzla merkezli İstanbul engelli ulaşım planınız hızlıca netleştirilsin.",
+    whatsapp: "WhatsApp’tan Ulaşım Planı Al",
     telefon: "Telefonla Ara",
   },
 };
@@ -637,13 +637,13 @@ export default function Home() {
             </div>
 
             <a
-              href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
+              href={`https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
               target="_blank"
               rel="noreferrer"
               onClick={(e) =>
                 donusumGonder(
                   e,
-                  `https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`
+                  `https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`
                 )
               }
               className="hidden rounded-full bg-love px-5 py-3 text-sm font-black text-white shadow-lg transition hover:-translate-y-1 md:inline-flex"
@@ -692,13 +692,13 @@ export default function Home() {
 
               <div className="mt-8 grid gap-3 sm:flex">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
+                  href={`https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
                   target="_blank"
                   rel="noreferrer"
                   onClick={(e) =>
                     donusumGonder(
                       e,
-                      `https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`
+                      `https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`
                     )
                   }
                   className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-love px-6 py-4 text-sm font-black text-white shadow-xl shadow-fuchsia-500/25 transition hover:-translate-y-1 sm:text-base"
@@ -1163,13 +1163,13 @@ export default function Home() {
 
               <div className="grid gap-3">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
+                  href={`https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
                   target="_blank"
                   rel="noreferrer"
                   onClick={(e) =>
                     donusumGonder(
                       e,
-                      `https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`
+                      `https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`
                     )
                   }
                   className="flex min-h-16 items-center justify-center gap-3 rounded-3xl bg-love px-7 py-5 text-base font-black text-white shadow-xl transition hover:-translate-y-1"
@@ -1197,24 +1197,22 @@ export default function Home() {
           <div>
             <h3 className="text-lg font-black rgb-love-text">Mir Turizm</h3>
             <p className="mt-3 leading-7">
-              Engelli araç kiralama, engelli taksi, gelin arabası, gezi, yemek,
-              düğün organizasyonu, planlı etkinlik ve fizik tedaviye gidiş-geliş
-              ulaşım hizmetleri.
+              İstanbul genelinde engelli taksi, engelli ulaşım, tekerlekli sandalye uyumlu araç, planlı etkinlik ve özel ulaşım hizmetleri.
             </p>
           </div>
 
           <div>
             <h4 className="mb-3 font-black rgb-love-text">Hizmetler</h4>
-            <p>Engelli Araç Kiralama</p>
-            <p>Engelli Taksi</p>
-            <p>Gelin Arabası</p>
-            <p>Fizik Tedavi Gidiş-Geliş</p>
+            <p>İstanbul Engelli Taksi</p>
+            <p>Engelli Ulaşım</p>
+            <p>Tekerlekli Sandalye Uyumlu Araç</p>
+            <p>Tuzla Engelli Ulaşım</p>
           </div>
 
           <div>
             <h4 className="mb-3 font-black rgb-love-text">İletişim</h4>
             <p className="flex items-center gap-2">
-              <MapPin size={16} /> İstanbul / Türkiye
+              <MapPin size={16} /> Tuzla / İstanbul
             </p>
             <p className="mt-2 flex items-center gap-2">
               <Phone size={16} /> +90 553 354 50 18
@@ -1234,13 +1232,13 @@ export default function Home() {
         </a>
 
         <a
-          href={`https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`}
+          href={`https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`}
           target="_blank"
           rel="noreferrer"
           onClick={(e) =>
             donusumGonder(
               e,
-              `https://wa.me/${phone}?text=Merhaba,%20engelli%20ara%C3%A7%20kiralama%20/%20engelli%20taksi%20/%20gelin%20arabas%C4%B1%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`
+              `https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.`
             )
           }
           className="flex items-center justify-center gap-2 rounded-full bg-love px-4 py-3 text-sm font-black text-white shadow-2xl transition hover:-translate-y-1"
