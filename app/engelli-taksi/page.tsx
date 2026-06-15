@@ -1,5 +1,5 @@
-import Home from "../page";
+import { permanentRedirect } from "next/navigation";
 
 export default function EngelliTaksiPage() {
-  return <Home />;
+  permanentRedirect("/");
 }
