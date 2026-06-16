@@ -1,6 +1,6 @@
 "use client";
 
-import type { MouseEvent } from "react";
+import { useMemo, useState, type FormEvent, type MouseEvent } from "react";
 import { motion, type Variants } from "framer-motion";
 import {
   Accessibility,
@@ -98,28 +98,28 @@ const sayfaIcerigi = {
   },
 
   hero: {
-    rozet: "Tuzla merkezli İstanbul engelli taksi ve planlı ulaşım hizmeti",
-    baslik1: "İstanbul engelli",
-    baslik2: "taksi hizmeti.",
+    rozet: "Kadıköy merkezli, İstanbul genelinde randevulu engelli ulaşım",
+    baslik1: "Ulaşımda engel yok.",
+    baslik2: "Yolculuğunuz güvenle planlansın.",
     aciklama:
-      "Mir Ulaşım, Tuzla merkezli olarak İstanbul genelinde engelli taksi, engelli ulaşım ve tekerlekli sandalye uyumlu araç hizmeti sunar. Pendik, Kartal, Maltepe, Sultanbeyli, Gebze ve çevre bölgelerde randevulu, güvenli ve konforlu ulaşım planı hazırlanır. Gezi, yemek, düğün organizasyonu, gelin arabası, planlı etkinlik ve fizik tedaviye gidiş-geliş için hızlı bilgi alabilirsiniz.",
+      "Mir Ulaşım, Kadıköy merkezli olarak İstanbul genelinde tekerlekli sandalye uyumlu araçlarla randevulu engelli taksi ve kapıdan kapıya engelli ulaşım hizmeti sunar. Hastane, fizik tedavi, havalimanı, gezi, düğün, organizasyon ve özel adres yolculukları güzergâh ile saate göre planlanır.",
     etiketler: [
-      "İstanbul Engelli Taksi",
-      "Engelli Ulaşım",
       "Tekerlekli Sandalye Uyumlu Araç",
-      "Tuzla • Pendik • Kartal",
+      "Kapıdan Alım ve Adrese Bırakma",
+      "Yolculuk Öncesi Fiyat Bilgisi",
+      "Kadıköy • Üsküdar • Ataşehir • Maltepe",
     ],
-    anaButon: "WhatsApp’tan Hemen Bilgi Al",
+    anaButon: "Hızlı Talep Oluştur",
     ikinciButon: "Telefonla Hemen Ara",
     gorsel: "/vip1.jpg",
     gorselUstYazi: "İstanbul Engelli Ulaşım",
-    gorselBaslik: "Tuzla’dan İstanbul geneline planlı ulaşım.",
+    gorselBaslik: "Kadıköy’den İstanbul geneline planlı ulaşım.",
     gorselAciklama:
-      "Alınacak konum, gidilecek adres, tarih, saat ve kullanım amacına göre engelli taksi ve tekerlekli sandalye uyumlu araç planı oluşturulur.",
+      "Kadıköy, Anadolu Yakası ve İstanbul genelinde alınacak konum, gidilecek adres, tarih, saat ve kullanım amacına göre tekerlekli sandalye uyumlu araç planı oluşturulur.",
   },
 
   istatistikler: [
-    ["Tuzla", "Merkezli Hizmet"],
+    ["Kadıköy", "Merkezli Hizmet"],
     ["İstanbul", "Geneli Ulaşım"],
     ["En Az", "3 Saat Önce"],
     ["7/24", "Bilgi ve Randevu"],
@@ -134,7 +134,7 @@ const sayfaIcerigi = {
     {
       icon: Car,
       title: "Engelli ulaşım",
-      desc: "Tuzla, Pendik, Kartal, Maltepe ve çevre bölgelerde planlı, güvenli ve konforlu ulaşım desteği.",
+      desc: "Kadıköy, Üsküdar, Ataşehir, Maltepe ve İstanbul genelinde planlı, güvenli ve konforlu ulaşım desteği.",
     },
     {
       icon: CalendarCheck,
@@ -150,9 +150,9 @@ const sayfaIcerigi = {
 
   hizmetler: {
     rozet: "Hizmetlerimiz",
-    baslik: "İstanbul engelli taksi ve engelli ulaşım hizmetlerimiz.",
+    baslik: "Kadıköy ve İstanbul genelinde engelli taksi hizmetleri.",
     aciklama:
-      "Mir Ulaşım; İstanbul, Tuzla, Pendik, Kartal, Maltepe, Sultanbeyli ve Gebze çevresinde engelli bireylerin günlük yaşam, özel gün ve planlı ulaşım ihtiyaçları için randevulu hizmet sunar.",
+      "Mir Ulaşım; Kadıköy merkezli olarak İstanbul genelinde engelli bireylerin hastane, fizik tedavi, havalimanı, sosyal yaşam, özel gün ve planlı ulaşım ihtiyaçları için randevulu hizmet sunar.",
     kartlar: [
       {
         icon: Accessibility,
@@ -160,8 +160,8 @@ const sayfaIcerigi = {
         desc: "İstanbul genelinde engelli bireyler için tekerlekli sandalye uyumlu araçlarla randevulu engelli taksi hizmeti sunulur.",
         image: "/vip1.jpg",
         points: [
-          "Tuzla merkezli hizmet",
-          "Pendik, Kartal, Maltepe ulaşım",
+          "Kadıköy merkezli hizmet",
+          "Üsküdar, Ataşehir, Maltepe ulaşım",
           "Kapıdan alım ve adrese bırakma",
           "Güzergaha göre fiyatlandırma",
         ],
@@ -192,13 +192,13 @@ const sayfaIcerigi = {
       },
       {
         icon: Clock,
-        title: "Tuzla Engelli Ulaşım",
-        desc: "Tuzla merkezli olarak Pendik, Kartal, Maltepe, Sultanbeyli, Gebze ve çevre bölgelerde engelli ulaşım planı oluşturulur.",
+        title: "Kadıköy Engelli Taksi ve Ulaşım",
+        desc: "Kadıköy merkezli olarak Üsküdar, Ataşehir, Maltepe, Kartal, Pendik ve İstanbul genelinde engelli ulaşım planı oluşturulur.",
         image: "/vip-4.jpg",
         points: [
-          "Tuzla çıkışlı planlama",
-          "Pendik ve Kartal ulaşım",
-          "Maltepe ve Gebze çevresi",
+          "Kadıköy çıkışlı planlama",
+          "Üsküdar ve Ataşehir ulaşım",
+          "Maltepe, Kartal ve Pendik çevresi",
           "En az 3 saat önce randevu",
         ],
       },
@@ -253,7 +253,7 @@ const sayfaIcerigi = {
       },
       {
         title: "Engelli Ulaşım",
-        desc: "Tuzla, Pendik, Kartal, Maltepe ve çevre bölgelerde şehir içi ulaşım desteği.",
+        desc: "Kadıköy, Üsküdar, Ataşehir, Maltepe ve İstanbul genelinde şehir içi ulaşım desteği.",
         image: "/vip-2.jpg",
       },
       {
@@ -348,13 +348,261 @@ const sayfaIcerigi = {
 
   cta: {
     rozet: "Randevu ve Bilgi",
-    baslik: "İstanbul engelli taksi ve engelli ulaşım için hemen iletişime geçin.",
+    baslik: "Kadıköy ve İstanbul geneli için engelli ulaşım talebi oluşturun.",
     aciklama:
-      "WhatsApp üzerinden alınacak yer, gidilecek adres, tarih, saat ve kullanım amacını gönderin. Tuzla merkezli İstanbul engelli ulaşım planınız hızlıca netleştirilsin.",
+      "Alınacak yer, gidilecek adres, tarih ve saat bilgilerini formda doldurun. Bilgileriniz WhatsApp mesajına otomatik eklenerek Kadıköy ve İstanbul geneli için hızlı ulaşım talebi oluşturulsun.",
     whatsapp: "WhatsApp’tan Ulaşım Planı Al",
     telefon: "Telefonla Ara",
   },
 };
+
+type TalepFormu = {
+  adSoyad: string;
+  telefon: string;
+  alinacakYer: string;
+  gidilecekYer: string;
+  tarih: string;
+  saat: string;
+  hizmetTuru: string;
+  gidisDonus: string;
+  refakatci: string;
+  not: string;
+  kvkk: boolean;
+};
+
+const bosTalepFormu: TalepFormu = {
+  adSoyad: "",
+  telefon: "",
+  alinacakYer: "",
+  gidilecekYer: "",
+  tarih: "",
+  saat: "",
+  hizmetTuru: "Hastane veya fizik tedavi ulaşımı",
+  gidisDonus: "Tek yön",
+  refakatci: "0 refakatçi",
+  not: "",
+  kvkk: false,
+};
+
+function HizliTalepFormu({ formId, kisa = false }: { formId: string; kisa?: boolean }) {
+  const [form, setForm] = useState<TalepFormu>(bosTalepFormu);
+  const [hata, setHata] = useState("");
+
+  const bugun = useMemo(() => {
+    const d = new Date();
+    d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+    return d.toISOString().split("T")[0];
+  }, []);
+
+  function guncelle<K extends keyof TalepFormu>(alan: K, deger: TalepFormu[K]) {
+    setForm((onceki) => ({ ...onceki, [alan]: deger }));
+  }
+
+  function gonder(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setHata("");
+
+    if (!form.kvkk) {
+      setHata("Talebi oluşturmak için aydınlatma metnini onaylayın.");
+      return;
+    }
+
+    const whatsappMesaji = [
+      "Merhaba, engellitasima.com üzerinden ulaşım talebi oluşturuyorum.",
+      "",
+      `Ad Soyad: ${form.adSoyad}`,
+      `Telefon: ${form.telefon}`,
+      `Alınacak Yer: ${form.alinacakYer}`,
+      `Gidilecek Yer: ${form.gidilecekYer}`,
+      `Tarih: ${form.tarih}`,
+      `Saat: ${form.saat}`,
+      `Hizmet Türü: ${form.hizmetTuru}`,
+      `Yolculuk: ${form.gidisDonus}`,
+      `Refakatçi: ${form.refakatci}`,
+      form.not.trim() ? `Ek Not: ${form.not.trim()}` : "Ek Not: Belirtilmedi",
+      "",
+      "Kadıköy / İstanbul geneli için araç uygunluğu ve fiyat bilgisi rica ediyorum.",
+    ].join("\n");
+
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMesaji)}`;
+
+    window.gtag?.("event", "conversion", {
+      send_to: googleConversionSendTo,
+    });
+
+    const yeniPencere = window.open(whatsappUrl, "_blank");
+    if (yeniPencere) {
+      yeniPencere.opener = null;
+    } else {
+      window.location.href = whatsappUrl;
+    }
+  }
+
+  const alan =
+    "h-12 w-full rounded-xl border border-white/15 bg-[#12091f]/70 px-4 text-sm font-bold text-white outline-none placeholder:text-white/45 focus:border-[#ffd166] focus:ring-4 focus:ring-[#ffd166]/10";
+
+  return (
+    <div
+      id={formId}
+      className="relative scroll-mt-6 overflow-hidden rounded-[2rem] border border-fuchsia-300/25 bg-[#12091f]/94 p-5 shadow-2xl backdrop-blur-xl sm:p-7"
+    >
+      <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[#ff9f1c]/20 blur-3xl" />
+
+      <div className="relative">
+        <p className="text-xs font-black uppercase tracking-[0.25em] rgb-love-text">
+          Hızlı Ulaşım Talebi
+        </p>
+
+        <h2 className="mt-3 text-2xl font-black rgb-love-text sm:text-3xl">
+          Fiyat ve araç uygunluğunu WhatsApp’tan öğrenin.
+        </h2>
+
+        <p className="mt-3 text-sm leading-6 text-[#d8f7ff]">
+          Bilgileri doldurup butona bastığınızda WhatsApp açılır ve tüm alanlar hazır mesaja otomatik eklenir.
+        </p>
+
+        <form onSubmit={gonder} className="mt-5 grid gap-4">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <input
+              required
+              autoComplete="name"
+              value={form.adSoyad}
+              onChange={(e) => guncelle("adSoyad", e.target.value)}
+              placeholder="Ad soyad"
+              className={alan}
+            />
+            <input
+              required
+              inputMode="tel"
+              autoComplete="tel"
+              value={form.telefon}
+              onChange={(e) => guncelle("telefon", e.target.value)}
+              placeholder="Telefon numarası"
+              className={alan}
+            />
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <input
+              required
+              value={form.alinacakYer}
+              onChange={(e) => guncelle("alinacakYer", e.target.value)}
+              placeholder="Alınacak ilçe veya adres"
+              className={alan}
+            />
+            <input
+              required
+              value={form.gidilecekYer}
+              onChange={(e) => guncelle("gidilecekYer", e.target.value)}
+              placeholder="Gidilecek ilçe veya adres"
+              className={alan}
+            />
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <input
+              required
+              aria-label="Yolculuk tarihi"
+              type="date"
+              min={bugun}
+              value={form.tarih}
+              onChange={(e) => guncelle("tarih", e.target.value)}
+              className={`${alan} [color-scheme:dark]`}
+            />
+            <input
+              required
+              aria-label="Yolculuk saati"
+              type="time"
+              value={form.saat}
+              onChange={(e) => guncelle("saat", e.target.value)}
+              className={`${alan} [color-scheme:dark]`}
+            />
+          </div>
+
+          <select
+            aria-label="Hizmet türü"
+            value={form.hizmetTuru}
+            onChange={(e) => guncelle("hizmetTuru", e.target.value)}
+            className={alan}
+          >
+            <option className="bg-[#12091f]">Hastane veya fizik tedavi ulaşımı</option>
+            <option className="bg-[#12091f]">Şehir içi özel adres ulaşımı</option>
+            <option className="bg-[#12091f]">Havalimanı transferi</option>
+            <option className="bg-[#12091f]">Düğün ve organizasyon</option>
+            <option className="bg-[#12091f]">Gezi ve sosyal yaşam</option>
+            <option className="bg-[#12091f]">Düzenli veya kurumsal ulaşım</option>
+          </select>
+
+          {!kisa && (
+            <div className="grid gap-4 sm:grid-cols-2">
+              <select
+                aria-label="Yolculuk yönü"
+                value={form.gidisDonus}
+                onChange={(e) => guncelle("gidisDonus", e.target.value)}
+                className={alan}
+              >
+                <option className="bg-[#12091f]">Tek yön</option>
+                <option className="bg-[#12091f]">Gidiş - dönüş</option>
+                <option className="bg-[#12091f]">Saatlik araç</option>
+              </select>
+
+              <select
+                aria-label="Refakatçi sayısı"
+                value={form.refakatci}
+                onChange={(e) => guncelle("refakatci", e.target.value)}
+                className={alan}
+              >
+                <option className="bg-[#12091f]">0 refakatçi</option>
+                <option className="bg-[#12091f]">1 refakatçi</option>
+                <option className="bg-[#12091f]">2 refakatçi</option>
+                <option className="bg-[#12091f]">3+ refakatçi</option>
+              </select>
+            </div>
+          )}
+
+          <textarea
+            rows={3}
+            value={form.not}
+            onChange={(e) => guncelle("not", e.target.value)}
+            placeholder="Ek bilgi veya bekleme süresi (isteğe bağlı)"
+            className="w-full resize-none rounded-xl border border-white/15 bg-[#12091f]/70 px-4 py-3 text-sm font-bold text-white outline-none placeholder:text-white/45 focus:border-[#ffd166] focus:ring-4 focus:ring-[#ffd166]/10"
+          />
+
+          <label className="flex items-start gap-3 text-xs leading-5 text-white/65">
+            <input
+              required
+              type="checkbox"
+              checked={form.kvkk}
+              onChange={(e) => guncelle("kvkk", e.target.checked)}
+              className="mt-1 accent-[#ff9f1c]"
+            />
+            <span>
+              Talebimin yanıtlanması amacıyla bu bilgilerin WhatsApp mesajına eklenmesini kabul ediyorum.
+              Sağlık bilgisi veya teşhis paylaşmayın. {" "}
+              <a href="/kvkk" className="font-black text-[#ffd166] underline">
+                Aydınlatma metni
+              </a>
+            </span>
+          </label>
+
+          <button
+            type="submit"
+            className="flex min-h-14 items-center justify-center gap-2 rounded-xl bg-love px-5 text-sm font-black text-white shadow-xl transition hover:-translate-y-1"
+          >
+            Talebi WhatsApp’tan Gönder
+            <MessageCircle size={19} />
+          </button>
+
+          {hata && (
+            <p className="rounded-xl border border-red-300/25 bg-red-400/10 p-3 text-sm font-bold text-red-100">
+              {hata}
+            </p>
+          )}
+        </form>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -692,15 +940,7 @@ export default function Home() {
 
               <div className="mt-8 grid gap-3 sm:flex">
                 <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={(e) =>
-                    donusumGonder(
-                      e,
-                      `https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`
-                    )
-                  }
+                  href="#hizli-talep"
                   className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-love px-6 py-4 text-sm font-black text-white shadow-xl shadow-fuchsia-500/25 transition hover:-translate-y-1 sm:text-base"
                 >
                   {sayfaIcerigi.hero.anaButon}
@@ -736,37 +976,8 @@ export default function Home() {
               variants={animasyon}
               initial="gizli"
               animate="goster"
-              className="relative"
             >
-              <div className="absolute -inset-4 rounded-[2.8rem] bg-gradient-to-br from-[#ff5c8a]/30 via-[#23d5ff]/25 to-[#7c3aed]/30 blur-2xl" />
-
-              <div className="relative overflow-hidden rounded-[2rem] border border-fuchsia-300/25 bg-[#291044]/72 p-3 shadow-2xl backdrop-blur-xl sm:rounded-[2.4rem]">
-                <div className="relative min-h-[390px] overflow-hidden rounded-[1.6rem] bg-[#12091f] sm:min-h-[610px]">
-                  <img
-                    src={sayfaIcerigi.hero.gorsel}
-                    alt={sayfaIcerigi.hero.gorselBaslik}
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#12091f]/95 via-[#12091f]/35 to-transparent" />
-
-                  <div className="absolute left-5 top-5 rounded-full border border-fuchsia-300/25 bg-[#12091f]/65 px-4 py-2 text-xs font-black rgb-love-text backdrop-blur-xl">
-                    {sayfaIcerigi.hero.gorselUstYazi}
-                  </div>
-
-                  <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-fuchsia-300/25 bg-[#12091f]/72 p-5 backdrop-blur-xl">
-                    <p className="text-xs font-black uppercase tracking-[0.25em] rgb-love-text">
-                      {sayfaIcerigi.marka}
-                    </p>
-                    <h3 className="mt-2 text-2xl font-black rgb-love-text">
-                      {sayfaIcerigi.hero.gorselBaslik}
-                    </h3>
-                    <p className="mt-2 text-sm leading-6 text-[#d8f7ff]">
-                      {sayfaIcerigi.hero.gorselAciklama}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <HizliTalepFormu formId="hizli-talep" />
             </motion.div>
           </div>
 
@@ -1161,32 +1372,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid gap-3">
-                <a
-                  href={`https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={(e) =>
-                    donusumGonder(
-                      e,
-                      `https://wa.me/${phone}?text=Merhaba,%20web%20siteniz%20%C3%BCzerinden%20yaz%C4%B1yorum.%20%C4%B0stanbul%20engelli%20taksi%20/%20engelli%20ula%C5%9F%C4%B1m%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AHizmet%20t%C3%BCr%C3%BC:%0AAl%C4%B1nacak%20yer:%0AGidilecek%20yer:%0ATarih%20/%20Saat:%0AKullan%C4%B1m%20amac%C4%B1:`
-                    )
-                  }
-                  className="flex min-h-16 items-center justify-center gap-3 rounded-3xl bg-love px-7 py-5 text-base font-black text-white shadow-xl transition hover:-translate-y-1"
-                >
-                  {sayfaIcerigi.cta.whatsapp}
-                  <MessageCircle size={22} />
-                </a>
-
-                <a
-                  href={`tel:+${phone}`}
-                  onClick={(e) => donusumGonder(e, `tel:+${phone}`)}
-                  className="flex min-h-16 items-center justify-center gap-3 rounded-3xl border border-cyan-300/20 bg-[#241039]/90 px-7 py-5 text-base font-black text-white shadow-xl transition hover:-translate-y-1"
-                >
-                  {sayfaIcerigi.cta.telefon}
-                  <Phone size={22} />
-                </a>
-              </div>
+              <HizliTalepFormu formId="alt-talep-formu" kisa />
             </div>
           </div>
         </div>
@@ -1206,13 +1392,13 @@ export default function Home() {
             <p>İstanbul Engelli Taksi</p>
             <p>Engelli Ulaşım</p>
             <p>Tekerlekli Sandalye Uyumlu Araç</p>
-            <p>Tuzla Engelli Ulaşım</p>
+            <p>Kadıköy Engelli Taksi</p>
           </div>
 
           <div>
             <h4 className="mb-3 font-black rgb-love-text">İletişim</h4>
             <p className="flex items-center gap-2">
-              <MapPin size={16} /> Tuzla / İstanbul
+              <MapPin size={16} /> Kadıköy / İstanbul
             </p>
             <p className="mt-2 flex items-center gap-2">
               <Phone size={16} /> +90 553 354 50 18
